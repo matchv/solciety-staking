@@ -1,0 +1,115 @@
+22:44:29.037 ERROR TypeError: arweave_uploader is not a function 
+22:47:17.163 ERROR TypeError: arweave_uploader is not a function 
+22:48:03.950 ERROR Error: Command failed: py D:\marsalgo\2021_09_17_strual\leke_nft_prep\main.py D:\marsalgo\2021_09_17_strual\leke_nft_collectibles\json/2.json [object Promise]
+Traceback (most recent call last):
+  File "D:\marsalgo\2021_09_17_strual\leke_nft_prep\main.py", line 9, in <module>
+    import redis
+ModuleNotFoundError: No module named 'redis'
+ 
+23:02:59.436 ERROR SyntaxError: Unexpected token { in JSON at position 1403 
+23:06:38.665 ERROR Error: Command failed: py D:\marsalgo\2021_09_17_strual\leke_nft_prep\main.py D:\marsalgo\2021_09_17_strual\leke_nft_collectibles\json/0.json [object Promise]
+Traceback (most recent call last):
+  File "D:\marsalgo\2021_09_17_strual\leke_nft_prep\main.py", line 22, in <module>
+    tree = ET.parse('conf/config.xml')
+  File "C:\Python39\lib\xml\etree\ElementTree.py", line 1229, in parse
+    tree.parse(source, parser)
+  File "C:\Python39\lib\xml\etree\ElementTree.py", line 569, in parse
+    source = open(source, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'conf/config.xml'
+ 
+23:09:39.427 ERROR Error: Command failed: py D:\marsalgo\2021_09_17_strual\leke_nft_prep\main.py D:\marsalgo\2021_09_17_strual\leke_nft_collectibles\json/0.json [object Promise]
+Traceback (most recent call last):
+  File "D:\marsalgo\2021_09_17_strual\leke_nft_prep\main.py", line 22, in <module>
+    tree = ET.parse(os.getcwd()+'\\conf\\config.xml')
+  File "C:\Python39\lib\xml\etree\ElementTree.py", line 1229, in parse
+    tree.parse(source, parser)
+  File "C:\Python39\lib\xml\etree\ElementTree.py", line 569, in parse
+    source = open(source, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\marsalgo\\2021_09_17_strual\\leke_nft_server\\conf\\config.xml'
+ 
+23:11:38.643 ERROR Error: Command failed: py D:\marsalgo\2021_09_17_strual\leke_nft_server\main.py D:\marsalgo\2021_09_17_strual\leke_nft_collectibles\json/0.json [object Promise]
+Traceback (most recent call last):
+  File "D:\marsalgo\2021_09_17_strual\leke_nft_server\main.py", line 180, in <module>
+    json_uri = sys.arg[2]
+AttributeError: module 'sys' has no attribute 'arg'
+ 
+23:12:42.705 ERROR Error: Command failed: py D:\marsalgo\2021_09_17_strual\leke_nft_server\main.py D:\marsalgo\2021_09_17_strual\leke_nft_collectibles\json/0.json [object Promise]
+Traceback (most recent call last):
+  File "D:\marsalgo\2021_09_17_strual\leke_nft_server\main.py", line 180, in <module>
+    json_uri = sys.arg[2]
+AttributeError: module 'sys' has no attribute 'arg'
+ 
+23:14:11.237 ERROR Error: Command failed: py D:\marsalgo\2021_09_17_strual\leke_nft_server\main.py D:\marsalgo\2021_09_17_strual\leke_nft_collectibles\json/0.json [object Promise]
+Traceback (most recent call last):
+  File "D:\marsalgo\2021_09_17_strual\leke_nft_server\main.py", line 182, in <module>
+    print("processing=================================================", path_json)
+NameError: name 'path_json' is not defined
+ 
+23:15:39.865 ERROR Error: Command failed: py D:\marsalgo\2021_09_17_strual\leke_nft_server\main.py D:\marsalgo\2021_09_17_strual\leke_nft_collectibles\json/0.json [object Promise]
+thread 'main' panicked at 'called `Option::unwrap()` on a `None` value', token-metadata\test\src\main.rs:544:49
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+Traceback (most recent call last):
+  File "D:\marsalgo\2021_09_17_strual\leke_nft_server\main.py", line 203, in <module>
+    ok = createMetadata(tokenAddress, "nftName", json_uri)
+  File "D:\marsalgo\2021_09_17_strual\leke_nft_server\main.py", line 154, in createMetadata
+    p = subprocess.check_output(commands).decode('utf-8')
+  File "C:\Python39\lib\subprocess.py", line 424, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "C:\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['D:\\marsalgo\\2021_09_17_strual\\leke_nft_server\\tools\\solana_metadata.exe', 'create_metadata_accounts', '--mutable', '--mint', '8vdMA6wnvsda3BadG5sujU5pq2tbe5QEETFrVEXkX99V', '--name', 'nftName', '--uri', '[object', '--url', 'https://api.devnet.solana.com', '--keypair', 'D:\\marsalgo\\2021_09_17_strual\\leke_nft_server\\tools\\solana_wallet.json']' returned non-zero exit status 101.
+ 
+23:20:46.921 ERROR Error: Command failed: py D:\marsalgo\2021_09_17_strual\leke_nft_server\main.py D:\marsalgo\2021_09_17_strual\leke_nft_collectibles\json/0.json [object Promise]
+thread 'main' panicked at 'called `Option::unwrap()` on a `None` value', token-metadata\test\src\main.rs:544:49
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+Traceback (most recent call last):
+  File "D:\marsalgo\2021_09_17_strual\leke_nft_server\main.py", line 203, in <module>
+    ok = createMetadata(tokenAddress, "nftName", json_uri)
+  File "D:\marsalgo\2021_09_17_strual\leke_nft_server\main.py", line 154, in createMetadata
+    p = subprocess.check_output(commands).decode('utf-8')
+  File "C:\Python39\lib\subprocess.py", line 424, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "C:\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['D:\\marsalgo\\2021_09_17_strual\\leke_nft_server\\tools\\solana_metadata.exe', 'create_metadata_accounts', '--mutable', '--mint', 'HDw8YD9LZuDqi4Bzqo1GQsCRkWkQNscKVdsocqsARmdL', '--name', 'nftName', '--uri', '[object', '--url', 'https://api.devnet.solana.com', '--keypair', 'D:\\marsalgo\\2021_09_17_strual\\leke_nft_server\\tools\\solana_wallet.json']' returned non-zero exit status 101.
+ 
+23:21:14.503 ERROR ReferenceError: walletFile is not defined 
+23:24:25.344 ERROR Error: Command failed: py D:\marsalgo\2021_09_17_strual\leke_nft_server\main.py D:\marsalgo\2021_09_17_strual\leke_nft_collectibles\json/0.json https://w_x9V6JVp9BB73YvUs3XVGMaI2TBEZiIiC1EmCgcEcA.arweave.net/AeUJP5z3XF2hGgJipv2nRLM0KQ5wAzaXBDHkZO6XGUg
+RPC request error: cluster version query failed: error sending request for url (https://api.devnet.solana.com/): error trying to connect: 远程主机强迫关闭了一个现有的连接。 (os error 10054)
+Traceback (most recent call last):
+  File "D:\marsalgo\2021_09_17_strual\leke_nft_server\main.py", line 197, in <module>
+    ok = mint(tokenAddress)
+  File "D:\marsalgo\2021_09_17_strual\leke_nft_server\main.py", line 124, in mint
+    p = subprocess.check_output(commands).decode('utf-8')
+  File "C:\Python39\lib\subprocess.py", line 424, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "C:\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['D:\\marsalgo\\2021_09_17_strual\\leke_nft_server\\tools\\solana_token.exe', 'mint', 'F85KwjXjA9VxfdzCvVtQdLw5hFMvWB4GZ97wtN9YsrXH', '1', '--url', 'https://api.devnet.solana.com', '--owner', 'D:\\marsalgo\\2021_09_17_strual\\leke_nft_server\\tools\\solana_wallet.json']' returned non-zero exit status 1.
+ 
+23:27:59.504 ERROR Error: Command failed: py D:\marsalgo\2021_09_17_strual\leke_nft_server\main.py D:\marsalgo\2021_09_17_strual\leke_nft_collectibles\json/0.json https://EQk4dFchzPZBhI9kUAPBYlzcH-TMzmQubCRZjRs53nE.arweave.net/soD7VrWzc2bGpA2DFWFj6hReq81CWf33kdzGDwuRc-k
+Could not find token account 8JyJ6EBWUdxsuw619HzYB2PezJDZKkWCmDc3DGwzh8wV
+Traceback (most recent call last):
+  File "D:\marsalgo\2021_09_17_strual\leke_nft_server\main.py", line 197, in <module>
+    ok = mint(tokenAddress)
+  File "D:\marsalgo\2021_09_17_strual\leke_nft_server\main.py", line 133, in mint
+    p = subprocess.check_output(commands).decode('utf-8')
+  File "C:\Python39\lib\subprocess.py", line 424, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "C:\Python39\lib\subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['D:\\marsalgo\\2021_09_17_strual\\leke_nft_server\\tools\\solana_token.exe', 'balance', 'AuaQrcthUKoHF2QWuyPRDiyjiWHd4kYR2LXAfMuKGRPp']' returned non-zero exit status 1.
+ 
+23:46:13.803 ERROR Error: Command failed: tools/prep.exe Happy Dog 0 HD https://uMunObsqErfrN0mJTdZkmcHBkilUMp-3jq9ctXBv1Ws.arweave.net/zLC6h0bAHDM8D23_jgx3h4ZXhCLE9z_HEyl9qXgsUaA
+'tools' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+23:47:46.647 ERROR Error: Command failed: cmd /C tools/prep.exe Happy Dog 0 HD https://pj3LxkXHXAFQqCwj1TZGbeHpVm7FR6dQvN2_BSAZ5dY.arweave.net/AWIMFyVx-Av8Mr9jMx8d2hDBFEVUsQJ3v6MhT05Pd3k
+'tools' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+23:49:18.683 ERROR TypeError: output.split is not a function 
+23:50:59.666 ERROR TypeError: output.split is not a function 
+23:52:45.389 ERROR TypeError: output.split is not a function 
+23:54:01.025 ERROR TypeError: output.split is not a function 
+23:56:38.970 ERROR TypeError: output.split is not a function 

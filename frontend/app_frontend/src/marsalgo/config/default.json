@@ -1,0 +1,23 @@
+{
+    "NETWORK": "devnet",
+    "MY_PUBLIC_KEY": "9MJzW1oEzvjHnmdLdoGRGr1i4hu82g7eEEnxvmifcDZD",
+    "PRICE":0.01,
+    "MAX_BUY":10,
+    "backend_endpoint_base":"http://localhost:9000/api/",
+    "mckenna":{
+        "PASS":{
+            "timeout_hour":48,
+            "price":0.1,
+            "per_wallet_hero":3,
+            "per_wallet_villain":3
+        },
+        "PRESALE":{
+            "timeout_hour":48,
+            "price":0.1
+        },
+        "MAIN":{
+            "timeout_hour":48,
+            "price":0.1
+        }
+    }
+}

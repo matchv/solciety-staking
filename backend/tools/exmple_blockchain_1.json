@@ -1,0 +1,477 @@
+{
+	"id": 1,
+	"slug": "Bitcoin-R9",
+	"name": "Bitcoin",
+	"thumbnail": {
+		"icon": "https://media-thumbs.golden.com/GfOT1Lj6PMZq4MSjAcrd-bcmlvY=/30x30/smart/golden-media.s3.amazonaws.com%2Ftopics%2F5436e83e-bac9-42bc-9059-72cce96ed648.png",
+		"icon_retina": "https://media-thumbs.golden.com/WD3UEWwaOLWcXLkzZxyrJAmR2yc=/60x60/smart/golden-media.s3.amazonaws.com%2Ftopics%2F5436e83e-bac9-42bc-9059-72cce96ed648.png",
+		"small": "https://media-thumbs.golden.com/2A1qbHF4AUBJhE7AXtdV1SMjP2Y=/100x100/smart/golden-media.s3.amazonaws.com%2Ftopics%2F5436e83e-bac9-42bc-9059-72cce96ed648.png",
+		"small_retina": "https://media-thumbs.golden.com/5UUUdAAMqCFZgia7QsxcijFzXfU=/200x200/smart/golden-media.s3.amazonaws.com%2Ftopics%2F5436e83e-bac9-42bc-9059-72cce96ed648.png",
+		"original": "https://golden-media.s3.amazonaws.com/topics/5436e83e-bac9-42bc-9059-72cce96ed648.png"
+	},
+	"description": {
+		"nodes": [{
+			"data": {},
+			"type": "paragraph",
+			"nodes": [{
+				"leaves": [{
+					"text": "Bitcoin is a ",
+					"marks": [],
+					"object": "leaf"
+				}],
+				"object": "text"
+			}, {
+				"data": {
+					"id": 18
+				},
+				"type": "internal-link",
+				"nodes": [{
+					"leaves": [{
+						"text": "cryptocurrency",
+						"marks": [],
+						"object": "leaf"
+					}],
+					"object": "text"
+				}],
+				"isVoid": false,
+				"object": "inline"
+			}, {
+				"leaves": [{
+					"text": " and a digital payment system invented by an unknown programmer, or a group of programmers, under the name ",
+					"marks": [],
+					"object": "leaf"
+				}],
+				"object": "text"
+			}, {
+				"data": {
+					"id": 3308653
+				},
+				"type": "internal-link",
+				"nodes": [{
+					"leaves": [{
+						"text": "Satoshi Nakamoto",
+						"marks": [],
+						"object": "leaf"
+					}],
+					"object": "text"
+				}],
+				"isVoid": false,
+				"object": "inline"
+			}, {
+				"leaves": [{
+					"text": ". It was released as open-source software in 2009.",
+					"marks": [],
+					"object": "leaf"
+				}],
+				"object": "text"
+			}],
+			"isVoid": false,
+			"object": "block"
+		}]
+	},
+	"generated_description": {
+		"nodes": [{
+			"data": {},
+			"type": "paragraph",
+			"nodes": [{
+				"leaves": [{
+					"text": "Bitcoin is a company founded in 2009 by Satoshi Nakamoto.",
+					"marks": [],
+					"object": "leaf"
+				}],
+				"object": "text"
+			}],
+			"isVoid": false,
+			"object": "block"
+		}]
+	},
+	"prefers_generated": false,
+	"organization": {
+		"id": 1,
+		"slug": "wiki",
+		"name": "wiki",
+		"visibility_type": 0,
+		"avatar": {
+			"icon": null,
+			"icon_retina": null,
+			"small": null,
+			"small_retina": null,
+			"original": null
+		}
+	},
+	"version_id": 23097154,
+	"infobox": [{
+		"name": "website",
+		"label": "Website",
+		"field_model": "url",
+		"display_value": "https://bitcoin.org/en/",
+		"display_url": null
+	}, {
+		"name": "twitter_url",
+		"label": "Twitter",
+		"field_model": "url",
+		"display_value": "https://twitter.com/Bitcoin",
+		"display_url": null
+	}, {
+		"name": "ticker_symbol",
+		"label": "Ticker symbol",
+		"field_model": "text",
+		"display_value": "BTC",
+		"display_url": null
+	}, {
+		"name": "ledger_genesis",
+		"label": "Ledger genesis",
+		"field_model": "date",
+		"display_value": {
+			"day": 3,
+			"year": 2009,
+			"month": 1
+		},
+		"display_url": null
+	}, {
+		"name": "hash_function",
+		"label": "Hash function",
+		"field_model": "entity",
+		"display_value": 5305383,
+		"display_url": null
+	}, {
+		"name": "block_explorer",
+		"label": "Block explorer",
+		"field_model": "url",
+		"display_value": "https://blockchain.info/",
+		"display_url": null
+	}, {
+		"name": "consensus_mechanism",
+		"label": "Consensus mechanism",
+		"field_model": "entity",
+		"display_value": 435664,
+		"display_url": null
+	}, {
+		"name": "whitepaper",
+		"label": "Whitepaper",
+		"field_model": "url",
+		"display_value": "https://bitcoin.org/bitcoin.pdf",
+		"display_url": null
+	}, {
+		"name": "blog",
+		"label": "Blog",
+		"field_model": "url",
+		"display_value": "https://bitcoin.org/en/blog",
+		"display_url": null
+	}, {
+		"name": "github_url",
+		"label": "GitHub",
+		"field_model": "url",
+		"display_value": "https://github.com/bitcoin/",
+		"display_url": null
+	}, {
+		"name": "reddit_url",
+		"label": "Reddit",
+		"field_model": "url",
+		"display_value": "https://www.reddit.com/r/Bitcoin/",
+		"display_url": null
+	}, {
+		"name": "coinmarketcap_url",
+		"label": "CoinMarketCap",
+		"field_model": "url",
+		"display_value": "https://coinmarketcap.com/currencies/bitcoin/",
+		"display_url": null
+	}, {
+		"name": "founded_by",
+		"label": "Founder",
+		"field_model": "entity",
+		"display_value": 3308653,
+		"display_url": null
+	}, {
+		"name": "founded",
+		"label": "Founded date",
+		"field_model": "date",
+		"display_value": {
+			"day": 3,
+			"year": 2009,
+			"month": 1
+		},
+		"display_url": null
+	}, {
+		"name": "source_code",
+		"label": "Source code",
+		"field_model": "url",
+		"display_value": "https://github.com/bitcoin/bitcoin",
+		"display_url": null
+	}, {
+		"name": "instance_of",
+		"label": "Is a",
+		"field_model": "entity",
+		"display_value": 18,
+		"display_url": null
+	}, {
+		"name": "creator",
+		"label": "Creator",
+		"field_model": "entity",
+		"display_value": 3308653,
+		"display_url": null
+	}, {
+		"name": "instance_of",
+		"label": "Is a",
+		"field_model": "entity",
+		"display_value": 6973,
+		"display_url": null
+	}, {
+		"name": "cryptocurrency_symbol",
+		"label": "Cryptocurrency symbol",
+		"field_model": "text",
+		"display_value": "₿",
+		"display_url": null
+	}, {
+		"name": "latest_release",
+		"label": "Latest release",
+		"field_model": "date",
+		"display_value": {
+			"day": 25,
+			"year": 2018,
+			"month": 12
+		},
+		"display_url": null
+	}, {
+		"name": "industry",
+		"label": "Industry",
+		"field_model": "entity",
+		"display_value": 177451,
+		"display_url": null
+	}, {
+		"name": "industry",
+		"label": "Industry",
+		"field_model": "entity",
+		"display_value": 18,
+		"display_url": null
+	}, {
+		"name": "industry",
+		"label": "Industry",
+		"field_model": "entity",
+		"display_value": 28,
+		"display_url": null
+	}, {
+		"name": "industry",
+		"label": "Industry",
+		"field_model": "entity",
+		"display_value": 1044944,
+		"display_url": null
+	}, {
+		"name": "maximum_supply",
+		"label": "Maximum supply",
+		"field_model": "int",
+		"display_value": 21000000,
+		"display_url": null
+	}, {
+		"name": "block_explorer",
+		"label": "Block explorer",
+		"field_model": "url",
+		"display_value": "https://blockstream.info",
+		"display_url": null
+	}, {
+		"name": "community_forum",
+		"label": "Community forum",
+		"field_model": "url",
+		"display_value": "https://bitcointalk.org/",
+		"display_url": null
+	}, {
+		"name": "b2what",
+		"label": "B2X",
+		"field_model": "entity",
+		"display_value": 5380633,
+		"display_url": null
+	}, {
+		"name": "block_reward",
+		"label": "Block reward",
+		"field_model": "float",
+		"display_value": 12.5,
+		"display_url": null
+	}, {
+		"name": "wikidata_id",
+		"label": "Wikidata ID",
+		"field_model": "text",
+		"display_value": "Q131723",
+		"display_url": "https://www.wikidata.org/wiki/Q131723"
+	}, {
+		"name": "website",
+		"label": "Website",
+		"field_model": "url",
+		"display_value": "http://www.bitcoin.org",
+		"display_url": null
+	}, {
+		"name": "stock_exchange",
+		"label": "Stock exchange",
+		"field_model": "entity",
+		"display_value": 4618998,
+		"display_url": null
+	}, {
+		"name": "stock_exchange",
+		"label": "Stock exchange",
+		"field_model": "entity",
+		"display_value": 5013040,
+		"display_url": null
+	}, {
+		"name": "stock_exchange",
+		"label": "Stock exchange",
+		"field_model": "entity",
+		"display_value": 5304657,
+		"display_url": null
+	}, {
+		"name": "website",
+		"label": "Website",
+		"field_model": "url",
+		"display_value": "https://bitcoin.org",
+		"display_url": null
+	}, {
+		"name": "stock_exchange",
+		"label": "Stock exchange",
+		"field_model": "entity",
+		"display_value": 5288606,
+		"display_url": null
+	}, {
+		"name": "crunchbase_url",
+		"label": "Crunchbase",
+		"field_model": "url",
+		"display_value": "https://www.crunchbase.com/organization/bitcoin",
+		"display_url": null
+	}, {
+		"name": "location",
+		"label": "Location",
+		"field_model": "location",
+		"display_value": 26758,
+		"display_url": null
+	}, {
+		"name": "last_funded_date",
+		"label": "Latest funding round date",
+		"field_model": "date",
+		"display_value": {
+			"year": 2017,
+			"month": 1
+		},
+		"display_url": null
+	}, {
+		"name": "total_funding_usd",
+		"label": "Total funding amount (USD)",
+		"field_model": "int",
+		"display_value": 1000000,
+		"display_url": null
+	}, {
+		"name": "location",
+		"label": "Location",
+		"field_model": "location",
+		"display_value": 146,
+		"display_url": null
+	}, {
+		"name": "last_funding_type",
+		"label": "Latest funding type",
+		"field_model": "entity",
+		"display_value": 5429032,
+		"display_url": null
+	}, {
+		"name": "named_after",
+		"label": "Named after",
+		"field_model": "entity",
+		"display_value": 1597,
+		"display_url": null
+	}, {
+		"name": "named_after",
+		"label": "Named after",
+		"field_model": "entity",
+		"display_value": 3579,
+		"display_url": null
+	}, {
+		"name": "publication_date",
+		"label": "Published date",
+		"field_model": "date",
+		"display_value": {
+			"day": 3,
+			"year": 2009,
+			"month": 1
+		},
+		"display_url": null
+	}, {
+		"name": "short_name",
+		"label": "Short name",
+		"field_model": "text",
+		"display_value": "BTC",
+		"display_url": null
+	}, {
+		"name": "instance_of",
+		"label": "Is a",
+		"field_model": "entity",
+		"display_value": 35,
+		"display_url": null
+	}, {
+		"name": "license",
+		"label": "License",
+		"field_model": "text",
+		"display_value": "9321",
+		"display_url": null
+	}, {
+		"name": "stock_exchange",
+		"label": "Stock exchange",
+		"field_model": "entity",
+		"display_value": 5288556,
+		"display_url": null
+	}, {
+		"name": "instance_of",
+		"label": "Is a",
+		"field_model": "entity",
+		"display_value": 6,
+		"display_url": null
+	}, {
+		"name": "investor_in_company",
+		"label": "Investors",
+		"field_model": "entity",
+		"display_value": 4148997,
+		"display_url": null
+	}, {
+		"name": "location",
+		"label": "Location",
+		"field_model": "location",
+		"display_value": 116,
+		"display_url": null
+	}, {
+		"name": "country",
+		"label": "Country",
+		"field_model": "location",
+		"display_value": 4447,
+		"display_url": null
+	}, {
+		"name": "investor_in_company",
+		"label": "Investors",
+		"field_model": "entity",
+		"display_value": 7725231,
+		"display_url": null
+	}, {
+		"name": "stock_exchange",
+		"label": "Stock exchange",
+		"field_model": "entity",
+		"display_value": 43,
+		"display_url": null
+	}, {
+		"name": "stock_exchange",
+		"label": "Stock exchange",
+		"field_model": "entity",
+		"display_value": 831267,
+		"display_url": null
+	}, {
+		"name": "stock_exchange",
+		"label": "Stock exchange",
+		"field_model": "entity",
+		"display_value": 4428429,
+		"display_url": null
+	}, {
+		"name": "stock_exchange",
+		"label": "Stock exchange",
+		"field_model": "entity",
+		"display_value": 5298662,
+		"display_url": null
+	}, {
+		"name": "stock_exchange",
+		"label": "Stock exchange",
+		"field_model": "entity",
+		"display_value": 5305508,
+		"display_url": null
+	}]
+}

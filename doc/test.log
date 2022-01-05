@@ -1,0 +1,379 @@
+====================================init============================================================
+david@debian:~/program_stake$ solana logs 9MJzW1oEzvjHnmdLdoGRGr1i4hu82g7eEEnxvmifcDZD
+Streaming transaction logs mentioning 9MJzW1oEzvjHnmdLdoGRGr1i4hu82g7eEEnxvmifcDZD. Confirmed commitment
+Transaction executed in slot 101953537:
+  Signature: 3PDEjTeycYCSWK7GwgdUAfXFPpQ4WAHJshZMF14qrRnGvPzYTEHWik5giMzFUbgazA8DRURdSLZb5g895kuseLUM
+  Status: Ok
+  Log Messages:
+    Program 11111111111111111111111111111111 invoke [1]
+    Program 11111111111111111111111111111111 success
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
+    Program log: Instruction: InitializeMint
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 2279 of 200000 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+Transaction executed in slot 101953549:
+  Signature: 5xi7bJCxLV3cHmUxrXBqQLHXzRCeto4EyzWzfiCgZFVjfvQKbeNGDMshwSQheARQKxWxDvBLMoPtdAT3yjWHSmi2
+  Status: Ok
+  Log Messages:
+    Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]
+    Program log: Transfer 2039280 lamports to the associated token account
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program log: Allocate space for the associated token account
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program log: Assign the associated token account to the SPL Token program
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program log: Initialize the associated token account
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: InitializeAccount
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3412 of 174410 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 29683 of 200000 compute units
+    Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success
+Transaction executed in slot 101953559:
+  Signature: 38aKaWkpQEG3B8nW7yg4XkyiJpNUpT1q82Wa7vufdyzBEssLX1YrbWkCFfHVSnQTWKj5cRQcdgdt6bPLLSdDJWUm
+  Status: Ok
+  Log Messages:
+    Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]
+    Program log: Transfer 2039280 lamports to the associated token account
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program log: Allocate space for the associated token account
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program log: Assign the associated token account to the SPL Token program
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program log: Initialize the associated token account
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: InitializeAccount
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3412 of 174410 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 29683 of 200000 compute units
+    Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success
+Transaction executed in slot 101953569:
+  Signature: ZJbnmKoNAK2PAhsa9xqBq9wzzmD4wPrzyfYajfzMbX5NcJN22meAWJ6jLPbHEm7tngPk4qqag3cEP9BibR2bn2Z
+  Status: Ok
+  Log Messages:
+    Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]
+    Program log: Transfer 2039280 lamports to the associated token account
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program log: Allocate space for the associated token account
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program log: Assign the associated token account to the SPL Token program
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program log: Initialize the associated token account
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: InitializeAccount
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3412 of 174410 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 29683 of 200000 compute units
+    Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success
+Transaction executed in slot 101953581:
+  Signature: 4NXymZ2pKouQcNEZpMTg4zuDHPaNaRHChTMRTwKi4QdLi6LyTA2ivyRCCxgsbZCAzFrDfv9AwkdzG7uFcNKBpKxK
+  Status: Ok
+  Log Messages:
+    Program 11111111111111111111111111111111 invoke [1]
+    Program 11111111111111111111111111111111 success
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
+    Program log: Instruction: InitializeAccount
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3409 of 200000 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
+    Program log: Instruction: MintTo
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 2778 of 200000 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
+    Program log: Instruction: Transfer
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3120 of 200000 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
+    Program log: Instruction: Transfer
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3120 of 200000 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
+    Program log: Instruction: Transfer
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3120 of 200000 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program 11111111111111111111111111111111 invoke [1]
+    Program 11111111111111111111111111111111 success
+    Program 11111111111111111111111111111111 invoke [1]
+    Program 11111111111111111111111111111111 success
+    Program 11111111111111111111111111111111 invoke [1]
+    Program 11111111111111111111111111111111 success
+    Program FgbAQRzv24byLHCGsTzSXYqBPia6QSTibBfTud8fvNiB invoke [1]
+    Program log: Instruction: InsConfig=======================
+    Program log: stake_min_hours======1
+    Program log: stake_max_hours======7
+    Program log: emission_total_hours======14
+    Program log: ciety_decimals======9
+    Program log: start_emission======100000
+    Program log: decay_frequency_seconds======60
+    Program log: total_nfts======7000
+    Program log: [Init 1] Resolve accounts
+    Program log: [Init 2] The lamports of config account must be enough for rent exemption
+    Program log: [Init 3] Check if the config account has been initialized
+    Program log: [Init 4] Initialize ConfigDM
+    Program log: [Init 5] Save ConfigDM
+    Program log: [Init 6] Transfer the ownership of reward account to PDA
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: SetAuthority
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 2153 of 185613 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program log: [Init 7] process_init of program_token is completed!
+    Program FgbAQRzv24byLHCGsTzSXYqBPia6QSTibBfTud8fvNiB consumed 17208 of 200000 compute units
+    Program FgbAQRzv24byLHCGsTzSXYqBPia6QSTibBfTud8fvNiB success
+Disconnected: receiving on a closed channel
+
+
+==============================stake 1 NFT, one slot=======================================
+D:\mike\solmates\app_backend\solmate>solana logs 9MJzW1oEzvjHnmdLdoGRGr1i4hu82g7eEEnxvmifcDZD
+Streaming transaction logs mentioning 9MJzW1oEzvjHnmdLdoGRGr1i4hu82g7eEEnxvmifcDZD. Confirmed commitment
+Transaction executed in slot 102138371:
+  Signature: 8qKR853LKnRGszwnrn1LAhRttupQ6J5x7SwKhRnQbDCVeEiC1sL7t6T3mLfUAMQooPnjq9ARCwngmT3od2AdmYA
+  Status: Ok
+  Log Messages:
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
+    Program log: Instruction: Transfer
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3121 of 200000 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw invoke [1]
+    Program log: [Stake 1] Resolve accounts
+    Program log: [Stake 2] Get proj config from the chain
+    Program log: [Stake 2] 3333333333333
+    Program log: [Stake 2] 111111111111111111
+    Program log: [Stake 3] Get Pwdm from the chain
+    Program log: [Stake 4] Get Gcdm from the chain
+    Program log: [Stake 5] Get Gsdm from the chain
+    Program log: [Stake 6] Calculate start slot and end slot of staked NFTs
+    Program log: [Stake 7] Update gsdm
+    Program consumption: 196036 units remaining
+    Program log: start_slot===1030
+    Program log: end_slot===1090
+    Program log: bytes_per_slot===875
+    Program consumption: 194661 units remaining
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: SetAuthority
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 2153 of 192030 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program log: [Stake 8] Save Pwdm
+    Program log: [Stake 9] Save Gcdm
+    Program log: [Stake 10] Save Gsdm
+    Program log: [Stake 11] Stake is done.
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw consumed 11343 of 200000 compute units
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw success
+Disconnected: receiving on a closed channel
+
+1 nft, 1 slot takes 1375 compute units.
+all the rest operation takes 11343 - 1375 = 9968 compute units, operations like load account data, save account data, escrow etc.
+
+=============================stake 1 NFT, on 365 slots======================================
+D:\mike\solmates\app_backend\solmate>solana logs 9MJzW1oEzvjHnmdLdoGRGr1i4hu82g7eEEnxvmifcDZD
+Streaming transaction logs mentioning 9MJzW1oEzvjHnmdLdoGRGr1i4hu82g7eEEnxvmifcDZD. Confirmed commitment
+Transaction executed in slot 102160951:
+  Signature: 47q6p4anjFkqHWVxDiu7KAkguAM2UvnkSTfoRKoACZ2j4MpSJPTScg3otVs8YX2znvvpqQSAGkHZw9rF4K2V6Pu1
+  Status: Ok
+  Log Messages:
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
+    Program log: Instruction: Transfer
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3121 of 200000 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw invoke [1]
+    Program log: [Stake 1] Resolve accounts
+    Program log: [Stake 2] Get proj config from the chain
+    Program log: [Stake 2] 3333333333333
+    Program log: [Stake 2] 111111111111111111
+    Program log: [Stake 3] Get Pwdm from the chain
+    Program log: [Stake 4] Get Gcdm from the chain
+    Program log: [Stake 5] Get Gsdm from the chain
+    Program log: [Stake 6] Calculate start slot and end slot of staked NFTs
+    Program log: [Stake 7] Update gsdm
+    Program consumption: 196036 units remaining
+    Program log: start_slot===1173
+    Program log: end_slot===1233
+    Program log: bytes_per_slot===875
+    Program log: xxxxxxxxxxxxxxx==0
+    Program log: xxxxxxxxxxxxxxx==2
+    Program log: xxxxxxxxxxxxxxx==4
+    Program log: xxxxxxxxxxxxxxx==6
+    Program log: xxxxxxxxxxxxxxx==8
+    Program consumption: 192195 units remaining
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: SetAuthority
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 2153 of 189564 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program log: [Stake 8] Save Pwdm
+    Program log: [Stake 9] Save Gcdm
+    Program log: [Stake 10] Save Gsdm
+    Program log: [Stake 11] Stake is done.
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw consumed 13803 of 200000 compute units
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw success
+1 nft, 10 slots, takes 196036 - 192195 = 3841
+
+=========================stake 1 nft, on 365 slots========================
+D:\mike\solmates\app_backend\solmate>solana logs 9MJzW1oEzvjHnmdLdoGRGr1i4hu82g7eEEnxvmifcDZD
+Streaming transaction logs mentioning 9MJzW1oEzvjHnmdLdoGRGr1i4hu82g7eEEnxvmifcDZD. Confirmed commitment
+Transaction executed in slot 102162115:
+  Signature: N8ji64EWt3r3n2oo5ghG8zdSgb1A4gTtWU2wT3ZutPAwDyaBt94vSUFnvrieCxPAWcZgvTSiH4CVb3oQXf5THWX
+  Status: Ok
+  Log Messages:
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
+    Program log: Instruction: Transfer
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3121 of 200000 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw invoke [1]
+    Program log: [Stake 1] Resolve accounts
+    Program log: [Stake 2] Get proj config from the chain
+    Program log: [Stake 2] 3333333333333
+    Program log: [Stake 2] 111111111111111111
+    Program log: [Stake 3] Get Pwdm from the chain
+    Program log: [Stake 4] Get Gcdm from the chain
+    Program log: [Stake 5] Get Gsdm from the chain
+    Program log: [Stake 6] Calculate start slot and end slot of staked NFTs
+    Program log: [Stake 7] Update gsdm
+    Program consumption: 196036 units remaining
+    Program log: start_slot===1181
+    Program log: end_slot===1241
+    Program log: bytes_per_slot===875
+    Program log: xxxxxxxxxxxxxxx==0
+    Program log: xxxxxxxxxxxxxxx==50
+    Program log: xxxxxxxxxxxxxxx==100
+    Program log: xxxxxxxxxxxxxxx==150
+    Program log: xxxxxxxxxxxxxxx==200
+    Program log: xxxxxxxxxxxxxxx==250
+    Program log: xxxxxxxxxxxxxxx==300
+    Program log: xxxxxxxxxxxxxxx==350
+    Program consumption: 171217 units remaining
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: SetAuthority
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 2153 of 168586 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program log: [Stake 8] Save Pwdm
+    Program log: [Stake 9] Save Gcdm
+    Program log: [Stake 10] Save Gsdm
+    Program log: [Stake 11] Stake is done.
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw consumed 34781 of 200000 compute units
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw success
+
+    1 nft, 365 slots take 196036 - 171217 = 24819, the rest takes 34781 - 24819 = 9962
+
+    200000/34781 = 5.75, to be safe, meaning only 5 nfts are allowed to be staked at one time for 365 days.
+
+
+
+
+
+
+
+    ====================================
+    D:\mike\solmates\app_backend\solmate>solana logs 9MJzW1oEzvjHnmdLdoGRGr1i4hu82g7eEEnxvmifcDZD
+Streaming transaction logs mentioning 9MJzW1oEzvjHnmdLdoGRGr1i4hu82g7eEEnxvmifcDZD. Confirmed commitment
+Transaction executed in slot 102166540:
+  Signature: 4PSXVY6y2r6tWcyqckFMzPtQYN9iZBBmFVDYMaovVjFQKMCyNnEKBXqV7jpsfgbBpPuZawMsAp2wfjbFk8zqPrDY
+  Status: Ok
+  Log Messages:
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
+    Program log: Instruction: Transfer
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3121 of 200000 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw invoke [1]
+    Program log: [Stake 1] Resolve accounts
+    Program log: [Stake 2] Get proj config from the chain
+    Program log: [Stake 2] 3333333333333
+    Program log: [Stake 2] 111111111111111111
+    Program log: [Stake 3] Get Pwdm from the chain
+    Program log: [Stake 4] Get Gcdm from the chain
+    Program log: [Stake 5] Get Gsdm from the chain
+    Program log: [Stake 6] Calculate start slot and end slot of staked NFTs
+    Program log: [Stake 7] Update gsdm
+    Program log: start_slot===1209
+    Program log: end_slot===1269
+    Program log: bytes_per_slot===875
+    Program log: xxxxxxxxxxxxxxxx
+    Program consumption: 194698 units remaining
+    Program consumption: 194668 units remaining
+    Program consumption: 194648 units remaining
+    Program log: xxxxxxxxxxxxxxxx
+    Program consumption: 191926 units remaining
+    Program consumption: 191896 units remaining
+    Program consumption: 191876 units remaining
+    Program log: xxxxxxxxxxxxxxxx
+    Program consumption: 189154 units remaining
+    Program consumption: 189124 units remaining
+    Program consumption: 189104 units remaining
+    Program log: xxxxxxxxxxxxxxxx
+    Program consumption: 186382 units remaining
+    Program consumption: 186352 units remaining
+    Program consumption: 186332 units remaining
+    Program log: xxxxxxxxxxxxxxxx
+    Program consumption: 183610 units remaining
+    Program consumption: 183580 units remaining
+    Program consumption: 183560 units remaining
+    Program log: xxxxxxxxxxxxxxxx
+    Program consumption: 180838 units remaining
+    Program consumption: 180808 units remaining
+    Program consumption: 180788 units remaining
+    Program log: xxxxxxxxxxxxxxxx
+    Program consumption: 178066 units remaining
+    Program consumption: 178036 units remaining
+    Program consumption: 178016 units remaining
+    Program log: xxxxxxxxxxxxxxxx
+    Program consumption: 175294 units remaining
+    Program consumption: 175264 units remaining
+    Program consumption: 175244 units remaining
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: SetAuthority
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 2153 of 171840 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program log: [Stake 8] Save Pwdm
+    Program log: [Stake 9] Save Gcdm
+    Program log: [Stake 10] Save Gsdm
+    Program log: [Stake 11] Stake is done.
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw consumed 31527 of 200000 compute units
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw success
+Disconnected: receiving on a closed channel
+
+
+====================1 nft, 365 slots, optimized=====================
+Transaction executed in slot 102168084:
+  Signature: MBQpoKp7Gb96eUJUtEezRMfY73N3LD8KhNm44dfTzHd418PxdwMRWiNCkyhzNht1S5XvfxQi7AaDLFDmJ5L6o96
+  Status: Ok
+  Log Messages:
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
+    Program log: Instruction: Transfer
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3121 of 200000 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw invoke [1]
+    Program log: [Stake 1] Resolve accounts
+    Program log: [Stake 2] Get proj config from the chain
+    Program log: [Stake 2] 3333333333333
+    Program log: [Stake 2] 111111111111111111
+    Program log: [Stake 3] Get Pwdm from the chain
+    Program log: [Stake 4] Get Gcdm from the chain
+    Program log: [Stake 5] Get Gsdm from the chain
+    Program log: [Stake 6] Calculate start slot and end slot of staked NFTs
+    Program log: [Stake 7] Update gsdm
+    Program consumption: 196036 units remaining
+    Program log: start_slot===1219
+    Program log: end_slot===1279
+    Program log: bytes_per_slot===875
+    Program consumption: 177935 units remaining
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: SetAuthority
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 2153 of 175304 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program log: [Stake 8] Save Pwdm
+    Program log: [Stake 9] Save Gcdm
+    Program log: [Stake 10] Save Gsdm
+    Program log: [Stake 11] Stake is done.
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw consumed 28063 of 200000 compute units
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw success
+
+    1 nft, 365 slots take 196036 - 177935 = 18101 units
+    200000/28063 = 7.12, 
+

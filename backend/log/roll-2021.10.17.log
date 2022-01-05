@@ -1,0 +1,32 @@
+08:06:31.569 ERROR Error: read ECONNRESET 
+20:47:30.430 ERROR Error: read ECONNRESET 
+21:27:33.259 ERROR sys error: ReferenceError: Cannot access 'metadata' before initialization 
+21:31:25.958 ERROR sys error: ReferenceError: Cannot access 'metadata' before initialization 
+21:34:11.513 ERROR sys error: Error: Command failed: D:\marsalgo\2021_09_17_strual\leke_nft_server\tools\prep.exe create "undefined" undefined https://ESx4qSFFi0InZvYKBQtpS0i3FLI-J37Mjg3p0HgtuH0.arweave.net/CnSRJG83U-K9ihZlthFNrbLbFd4HmQD_WANHLuzra9o
+thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "系统找不到指定的文件。" }', src\lib.rs:112:63
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+ 
+21:36:55.851 ERROR sys error: Error: Command failed: D:\marsalgo\2021_09_17_strual\leke_nft_server\tools\prep.exe create "Happy Dog" HD https://ESx4qSFFi0InZvYKBQtpS0i3FLI-J37Mjg3p0HgtuH0.arweave.net/Mfde8GiPycOMguqXR-CMDgpOToJr1gz-uCYIcmY7pd8
+thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "系统找不到指定的文件。" }', src\lib.rs:112:63
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+ 
+21:40:39.699 ERROR sys error: Error: Command failed: D:\marsalgo\2021_09_17_strual\leke_nft_server\tools\prep.exe create "Happy Dog" HD https://ESx4qSFFi0InZvYKBQtpS0i3FLI-J37Mjg3p0HgtuH0.arweave.net/V5Pc4qRvrrkQ3zC1UM-uacusMcpbpjgyx7V5_1OPyak D:\marsalgo\2021_09_17_strual\leke_nft_server\tools\/config.yaml
+thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "系统找不到指定的文件。" }', src\lib.rs:112:63
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+ 
+21:46:32.566 ERROR sys error: Error: Command failed: D:\marsalgo\2021_09_17_strual\leke_nft_server\tools\prep.exe create "Happy Dog" HD https://ESx4qSFFi0InZvYKBQtpS0i3FLI-J37Mjg3p0HgtuH0.arweave.net/DArRiy57gIlkPzL_b98CgfF7-tK3emPAUPQQfHcdvPA D:\marsalgo\2021_09_17_strual\leke_nft_server\tools\/config.yaml
+thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "系统找不到指定的文件。" }', src\lib.rs:112:63
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+ 
+21:48:12.783 ERROR sys error: Error: Command failed: D:\marsalgo\2021_09_17_strual\leke_nft_server\tools\prep.exe create "Happy Dog" HD https://ESx4qSFFi0InZvYKBQtpS0i3FLI-J37Mjg3p0HgtuH0.arweave.net/_KaRP50SrHybA84vqW_CN-LcwPraqXr8o7NZYvqA00g config.yaml
+thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "系统找不到指定的文件。" }', src\lib.rs:112:63
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+ 
+21:50:08.330 ERROR sys error: Error: Command failed: D:\marsalgo\2021_09_17_strual\leke_nft_server\tools\prep.exe create "Happy Dog" HD https://ESx4qSFFi0InZvYKBQtpS0i3FLI-J37Mjg3p0HgtuH0.arweave.net/CfLI1hkj87lrkmABJOPzCcS8lSwXzJJo4db8069hPRY D:\marsalgo\2021_09_17_strual\leke_nft_server\tools\config.yaml
+thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "系统找不到指定的文件。" }', src\lib.rs:112:63
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+ 
+23:20:05.132 ERROR Error: read ECONNRESET 
+23:37:01.682 ERROR Error: read ECONNRESET 
+23:49:14.116 ERROR Error: read ECONNRESET 
+23:58:11.224 ERROR Error: read ECONNRESET 

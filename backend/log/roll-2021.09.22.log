@@ -1,0 +1,9 @@
+00:02:13.289 ERROR TypeError: output.split is not a function 
+00:05:32.534 ERROR TypeError: output.split is not a function 
+00:09:11.697 ERROR TypeError: output.split is not a function 
+01:16:58.277 ERROR Error: Command failed: D:\marsalgo\2021_09_17_strual\leke_nft_server\tools\prep.exe Happy Dog 0 HD https://RfhrFwdCo3rjgGIMqfZv7yBJ3Kwlr_KViXVGkq67-XY.arweave.net/4VNdiZjSNkPvebvTavLUfGkCnvs_Rb7GKOOCM_Gfo48
+thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: ClientError { request: Some(GetVersion), kind: Reqwest(reqwest::Error { kind: Request, url: Url { scheme: "https", cannot_be_a_base: false, username: "", password: None, host: Some(Domain("api.devnet.solana.com")), port: None, path: "/", query: None, fragment: None }, source: hyper::Error(Connect, Os { code: 10054, kind: ConnectionReset, message: "远程主机强迫关闭了一个现有的连接。" }) }) }', src\main.rs:58:40
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+ 
+02:21:08.548 ERROR Error: timeout of 20000ms exceeded 
+

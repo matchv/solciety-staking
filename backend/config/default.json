@@ -1,0 +1,44 @@
+{
+    "MY_WALLET":[139,39,155,224,108,248,40,76,200,77,54,117,150,246,18,65,136,130,39,142,86,208,254,62,121,231,133,68,254,195,69,225,124,17,116,91,13,240,45,204,186,239,183,179,140,46,248,5,175,210,238,80,109,175,240,87,171,37,73,220,26,110,179,244],
+    "NETWORK": "devnet",
+    "project": "demo",
+    "path_image": "D:\\marsalgo\\2021_09_17_strual\\leke_nft_collectibles\\image",
+    "path_json": "D:\\marsalgo\\2021_09_17_strual\\leke_nft_collectibles\\json",
+    "image_type": "png",
+    "arweave_wallet": "D:\\marsalgo\\2021_09_17_strual\\McKenna_server\\tools\\arweave_wallet.json",
+    "tool_path": "D:\\marsalgo\\2021_09_17_strual\\McKenna_server\\tools\\",
+    "total_supply": 3,
+    "creators": [
+        {
+            "address": "3PcFvGzZAtcjS1RnysdYVXgfghfhWWGF1vEoZECtaC59",
+            "share": 40
+        },
+        {
+            "address": "CDcm5oJaXa6W4VLZPk9Zsp3EP6fKp4V9T1QGf5fwPNCo",
+            "share": 60
+        }
+    ],
+    "whitelist":{
+        "url":"https://sheets.googleapis.com/v4/spreadsheets/1x6GOK5GYHJwvxmJsW4euoKmD9L6tWv3z0c1XGnkUTl8/?key=AIzaSyDHWP7zo4KcXt8PQS-_XwVsIPcHPrNdJbw&includeGridData=true",
+        "numSheet":0,
+        "numColumn":0,
+        "pollSeconds":2,
+        "max_per_wallet":50
+    },
+    "mckenna":{
+        "PASS":{
+            "timeout_hour":48,
+            "price":0.1,
+            "per_wallet_hero":3,
+            "per_wallet_villain":3
+        },
+        "PRESALE":{
+            "timeout_hour":48,
+            "price":0.1
+        },
+        "MAIN":{
+            "timeout_hour":48,
+            "price":0.1
+        }
+    }
+}

@@ -1,0 +1,27 @@
+[package]
+name = "solmate_program_stake"
+version = "0.1.0"
+edition = "2018"
+license = "WTFPL"
+publish = false
+
+[features]
+no-entrypoint = []
+
+[dependencies]
+solana-program = "1.6.9"
+thiserror = "1.0.24"
+arrayref = "0.3.6"
+spl-token = {version = "3.1.1", features = ["no-entrypoint"]}
+spl-associated-token-account = { version = "1.0", features = [ "no-entrypoint" ] }
+spl-token-metadata = { version = "0.0.1", features = ["no-entrypoint"]}
+
+serde_json = {version = "1.0.59"}
+serde = {version = "1.0.117"}
+serde_derive = {version = "1.0.117"}
+
+solmate_program_token = {path = "../program_token", features = ["no-entrypoint"]}
+bit-set = "0.5.0"
+
+[lib]
+crate-type = ["cdylib", "lib"]

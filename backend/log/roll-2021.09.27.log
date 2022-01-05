@@ -1,0 +1,28 @@
+00:57:09.756 ERROR sys error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle 
+01:05:55.629 ERROR sys error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle 
+01:21:30.845 ERROR sys error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle 
+01:26:27.943 ERROR sys error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle 
+01:29:02.135 ERROR arweave error: Failed to send to Arwaeve, maybe not enough balance: D:\marsalgo\2021_09_17_strual\leke_nft_collectibles\json/0.json 
+02:12:21.600 ERROR Error: connect ECONNREFUSED 127.0.0.1:6379 
+02:18:47.625 ERROR sys error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle 
+02:25:57.189 ERROR sys error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle 
+07:10:13.712 ERROR arweave error: Failed to send to Arwaeve, maybe not enough balance: D:\marsalgo\2021_09_17_strual\leke_nft_collectibles\json/1.json 
+

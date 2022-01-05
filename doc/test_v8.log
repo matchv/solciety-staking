@@ -1,0 +1,189 @@
+=======================init, 18.4 SOLs===========================
+Streaming transaction logs mentioning 9MJzW1oEzvjHnmdLdoGRGr1i4hu82g7eEEnxvmifcDZD. Confirmed commitment
+Transaction executed in slot 104433665:
+  Signature: 32ebm99bCAHigGnwWxV4D6CpBCz8fCy3ZLxP9FPdnF8psP9t2uiVzNE9vMqr4ujjRiaRvZqj9AhKBJ5eoTtE2YBB
+  Status: Ok
+  Log Messages:
+    Program 11111111111111111111111111111111 invoke [1]
+    Program 11111111111111111111111111111111 success
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
+    Program log: Instruction: InitializeMint
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 2279 of 200000 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+Transaction executed in slot 104433673:
+  Signature: 4yhfLmU9Q75TwJRjNs35Xkq4Amu9pcPYAFQU6m2pL7ST2kJrumoYgpVhzVStskmumUYyUyApESxLtEu3YkbuLP1u
+  Status: Ok
+  Log Messages:
+    Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]
+    Program log: Transfer 2039280 lamports to the associated token account
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program log: Allocate space for the associated token account
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program log: Assign the associated token account to the SPL Token program
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program log: Initialize the associated token account
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: InitializeAccount
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3412 of 179468 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 24625 of 200000 compute units
+    Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success
+Transaction executed in slot 104433680:
+  Signature: 3wvLdKTDGqo5cMYDSNiRxzCY1FbSporfCJvn5fkhfYMsKRRimtp4BmhMj7N3r8EP5aH2yWNnYVjMg5q5pSh9y8v9
+  Status: Ok
+  Log Messages:
+    Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]
+    Program log: Transfer 2039280 lamports to the associated token account
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program log: Allocate space for the associated token account
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program log: Assign the associated token account to the SPL Token program
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program log: Initialize the associated token account
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: InitializeAccount
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3412 of 171881 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 32212 of 200000 compute units
+    Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success
+Transaction executed in slot 104433687:
+  Signature: QjecpT3SqcFqNYVyBExqWBkA93TTkoeUrb9i6HYdzqGoZce7WaTjqJy2eewjgmaDfjgkmxLXbhJJcrbcpECPZEU
+  Status: Ok
+  Log Messages:
+    Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]
+    Program log: Transfer 2039280 lamports to the associated token account
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program log: Allocate space for the associated token account
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program log: Assign the associated token account to the SPL Token program
+    Program 11111111111111111111111111111111 invoke [2]
+    Program 11111111111111111111111111111111 success
+    Program log: Initialize the associated token account
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: InitializeAccount
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3412 of 174410 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 29683 of 200000 compute units
+    Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success
+Transaction executed in slot 104433698:
+  Signature: 3eG5ZBsHLy9Asc6UtaHaeKti1H3XTG5Kp2DuGPypJyyAwfvxKx9NvSJKcaVvvRkxiVnHfVvSPpFMEQWBwm4uak8a
+  Status: Ok
+  Log Messages:
+    Program 11111111111111111111111111111111 invoke [1]
+    Program 11111111111111111111111111111111 success
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
+    Program log: Instruction: InitializeAccount
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3409 of 200000 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
+    Program log: Instruction: MintTo
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 2778 of 200000 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
+    Program log: Instruction: Transfer
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3120 of 200000 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
+    Program log: Instruction: Transfer
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3120 of 200000 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
+    Program log: Instruction: Transfer
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3120 of 200000 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program 11111111111111111111111111111111 invoke [1]
+    Program 11111111111111111111111111111111 success
+    Program 11111111111111111111111111111111 invoke [1]
+    Program 11111111111111111111111111111111 success
+    Program 11111111111111111111111111111111 invoke [1]
+    Program 11111111111111111111111111111111 success
+    Program 11111111111111111111111111111111 invoke [1]
+    Program 11111111111111111111111111111111 success
+    Program 7Pfq1Lz24RWDrsJxCYaFuw3J9vVwPvcNiPeu38ssLrRo invoke [1]
+    Program log: input====================[0, 7, 0, 109, 1, 218, 2, 9, 160, 134, 1, 0, 60, 0, 0, 0, 88, 27, 100, 0, 5, 0, 1]
+    Program log: [Init 1] Resolve accounts
+    Program log: [Init 2] The lamports of config account must be enough for rent exemption
+    Program log: [Init 3] Check if the config account has been initialized
+    Program log: [Init 4] Initialize ConfigDM
+    Program log: [Init 5] Save ConfigDM
+    Program log: [Init 6] Transfer the ownership of reward account to PDA
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: SetAuthority
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 2153 of 183013 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program log: [Init 7] Done!
+    Program 7Pfq1Lz24RWDrsJxCYaFuw3J9vVwPvcNiPeu38ssLrRo consumed 19834 of 200000 compute units
+    Program 7Pfq1Lz24RWDrsJxCYaFuw3J9vVwPvcNiPeu38ssLrRo success
+
+============================stake 1 NFT for 7 days========================
+Streaming transaction logs mentioning 9MJzW1oEzvjHnmdLdoGRGr1i4hu82g7eEEnxvmifcDZD. Confirmed commitment
+Transaction executed in slot 104438857:
+  Signature: 1111111111111111111111111111111111111111111111111111111111111111
+  Status: Ok
+  Log Messages:
+    Program 11111111111111111111111111111111 invoke [1]
+    Program 11111111111111111111111111111111 success
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]
+    Program log: Instruction: Transfer
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3120 of 200000 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw invoke [1]
+    Program log: [Stake 1] Resolve accounts
+    Program log: [Stake 2] Load Config
+    Program log: [Stake 3] Load Pwdm
+    Program log: aaaaaaaaaaaa
+    Program log: 22222222222222
+    Program log: 3333333333333333
+    Program log: 444444444444444444444444
+    Program log: 555555555555555555555
+    Program log: [Stake 4] Load Gcdm
+    Program log: [Stake 5] Load Gsdm
+    Program log: [Stake 6] Calculate start_slot and end_slot of staked NFTs
+    Program log: [Stake 7] Update Gsdm and Gcdm
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]
+    Program log: Instruction: SetAuthority
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 2153 of 191329 compute units
+    Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success
+    Program log: [Stake 8] Save Pwdm
+    Program log: [Stake 9] Save Gcdm
+    Program log: [Stake 10] Save Gsdm
+    Program log: [Stake 11] Done!
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw consumed 12148 of 200000 compute units
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw success
+
+================================extend 1 day=================================
+Streaming transaction logs mentioning 9MJzW1oEzvjHnmdLdoGRGr1i4hu82g7eEEnxvmifcDZD. Confirmed commitment
+Transaction executed in slot 104439336:
+  Signature: 3jg5QCjHxmGvNy4FX1QkwM6iaduWGyVCkxaBjJnQkhnAtiu1xWiVrLjBxq4ZDzRLRM8roqQwffP6sRsdi7FmpyBG
+  Status: Ok
+  Log Messages:
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw invoke [1]
+    Program log: [Increse Time Length 1] Resolve accounts
+    Program log: [Increse Time Length 2] Load config
+    Program log: [Increse Time Length 3] Load Pwdm
+    Program log: 00000000000000000000
+    Program log: 11111111111111111111
+    Program log: aaaaaaaaaaaa
+    Program log: 22222222222222
+    Program log: 3333333333333333
+    Program log: 444444444444444444444444
+    Program log: 555555555555555555555
+    Program log: [Increse Time Length 4] Load Gcdm
+    Program log: [Increse Time Length 5] Load Gsdm
+    Program log: [Increse Time Length 6] Update Gcdm and Gsdm
+    Program log: [Increse Time Length 7] Save Gcdm
+    Program log: [Increse Time Length 8] Save Pwdm
+    Program log: [Increse Time Length 9] Save Gsdm
+    Program log: [Increse Time Length 10] Done!
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw consumed 3163 of 200000 compute units
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw success
+
+    

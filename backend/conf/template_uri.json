@@ -1,0 +1,15 @@
+{
+	"image": "this is a Arweave URI which is obtained after uploading a NFT image to Arweave, the prep tool will fill in",
+	"description": "",
+	"animation_url" : "",
+	"attributes": [
+    {
+      "trait_type": "", 
+      "value": ""
+    }, 
+    {
+      "trait_type": "", 
+      "value": ""
+    }
+  ]
+}

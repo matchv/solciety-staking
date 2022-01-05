@@ -1,0 +1,4 @@
+01:15:53.009 ERROR sys error: Error: Command failed: D:\marsalgo\2021_09_17_strual\McKenna_server\tools\prep.exe create "HeroPass: Year One"  https://Nfew4cNll_pRwbJmt3Y2LawJhNyWAcz267hDiJJZ8co.arweave.net/sxMI8R3DxcCDOadTkz_ddsEmPviYjiyPklxom2bLOME D:\marsalgo\2021_09_17_strual\McKenna_server\tools\config.yaml
+thread 'main' panicked at 'index out of bounds: the len is 5 but the index is 5', src\main.rs:31:16
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+ 

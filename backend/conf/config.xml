@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<!-- 
+		You can tune below settings depending on how fast Solana's network handles transactions
+		and how busy the network is.
+	-->
+	<waitingSecondsBeforeMinting>3</waitingSecondsBeforeMinting>
+	<waitingSecondsBeforeCreatMetadata>4</waitingSecondsBeforeCreatMetadata>
+
+	<!-- The solana network you want to connect to -->
+	<solanaNetwork>https://api.devnet.solana.com</solanaNetwork>
+	
+	<!-- I can be different file names, but must be stored under the tools folder -->
+	<solanaWallet>solana_wallet.json</solanaWallet>
+	
+	<!-- I can be different file names, but must be stored under the tools folder -->
+	<arweaveWallet>arweave_wallet.json</arweaveWallet>
+	
+	<!-- Full path is required, this folder contains all your NFT images -->
+	<nftImageFolder>D:\marsalgo\2021_08_25_Leke\leke_nft_collectibles\image</nftImageFolder>
+	
+	<!-- 
+	#1, Full path is required, this folder contains all your NFT JSON files.
+	#2, If there is an image file abc.png under the image folder, there must be correspondingly a abc.json under this folder.
+	#2, As a result of running this tool, a abc_result.json will be produced, it has four fields:
+			1) accountAddress, token account address
+			2) tokenAddress, token address
+			3) uriLink, URI of Arweave of abc.json
+			4) imageLink, image linke of Arweave
+			In particular, 1) and 2) are used for GUI as input to the logics of sending and buying
+	-->
+	<nftJsonFolder>D:\marsalgo\2021_08_25_Leke\leke_nft_collectibles\json</nftJsonFolder>
+	
+	<!-- This will be used as base of of NFTs, it's suffixed with numbers starting from 1, e.g., Happy Cat 1 -->
+	<nftBaseName>Happy Cat</nftBaseName>
+	
+	<nftFormat>png</nftFormat>
+	
+	<!-- 
+	It's required for creating a token, not supported by Phantom though, but it's very important, 
+	it's serving like a human readable ID for your token, such as BTC used in DEX or traditional Exchange -->
+	<nftSymbol>HC</nftSymbol>
+	
+	<!-- A common description for all NFTs -->
+	<nftDescription><![CDATA[Hey Solana peeps! I'm the artist at Degenerate Ape Academy, an NFT project launching on Solana 
+	on the 12th of August.]]></nftDescription>
+</config>

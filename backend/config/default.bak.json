@@ -1,0 +1,49 @@
+{
+    "MY_WALLET":[139,39,155,224,108,248,40,76,200,77,54,117,150,246,18,65,136,130,39,142,86,208,254,62,121,231,133,68,254,195,69,225,124,17,116,91,13,240,45,204,186,239,183,179,140,46,248,5,175,210,238,80,109,175,240,87,171,37,73,220,26,110,179,244],
+    "NETWORK": "devnet",
+    "project": "demo",
+    "path_image": "D:\\marsalgo\\2021_09_17_strual\\leke_nft_collectibles\\image",
+    "path_json": "D:\\marsalgo\\2021_09_17_strual\\leke_nft_collectibles\\json",
+    "image_type": "png",
+    "arweave_wallet": "D:\\marsalgo\\2021_09_17_strual\\leke_nft_server\\tools\\arweave_wallet.json",
+    "nft_name": "Happy Dog",
+    "nft_symbol": "HD",
+    "nft_description": "Description xxx",
+    "nft_external_url": "http://www.baidu.com",
+    "nft_percentage_go_to_creators_in_secondary_sale": 5,
+    "total_supply": 3,
+    "PRICE":0.01,
+    "prelaunch_count":2000,
+    "prelaunch_discount":25,
+    "affiliate_commision":10,
+    "creators": [
+        {
+            "address": "3PcFvGzZAtcjS1RnysdYVXgfghfhWWGF1vEoZECtaC59",
+            "share": 40
+        },
+        {
+            "address": "CDcm5oJaXa6W4VLZPk9Zsp3EP6fKp4V9T1QGf5fwPNCo",
+            "share": 60
+        }
+    ],
+    "whitelist":{
+        "url":"https://sheets.googleapis.com/v4/spreadsheets/1_L8Y61dHXKcdHYu6RnU4D1Fqb6UX15pxmNhOLvMqc80/?key=AIzaSyDHWP7zo4KcXt8PQS-_XwVsIPcHPrNdJbw&includeGridData=true",
+        "numSheet":0,
+        "numColumn":1,
+        "pollSeconds":2,
+        "max_per_wallet":50,
+        "proxy":{
+            "host":"localhost",
+            "port":7070
+        }
+    },
+    "coupon":{
+        "url": "a google sheet",
+        "numSheet":0,
+        "numColumn":1,
+        "pollSeconds":2,
+        "amount": 100,
+        "max_times": 10,
+        "expiration": "2021-12-01"
+    }
+}

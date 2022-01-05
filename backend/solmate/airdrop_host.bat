@@ -1,0 +1,11 @@
+solana airdrop 2 3PcFvGzZAtcjS1RnysdYVXgfghfhWWGF1vEoZECtaC59 --url https://api.devnet.solana.com
+solana airdrop 2 3PcFvGzZAtcjS1RnysdYVXgfghfhWWGF1vEoZECtaC59 --url https://api.devnet.solana.com
+solana airdrop 2 3PcFvGzZAtcjS1RnysdYVXgfghfhWWGF1vEoZECtaC59 --url https://api.devnet.solana.com
+solana airdrop 2 3PcFvGzZAtcjS1RnysdYVXgfghfhWWGF1vEoZECtaC59 --url https://api.devnet.solana.com
+solana airdrop 2 3PcFvGzZAtcjS1RnysdYVXgfghfhWWGF1vEoZECtaC59 --url https://api.devnet.solana.com
+solana airdrop 2 3PcFvGzZAtcjS1RnysdYVXgfghfhWWGF1vEoZECtaC59 --url https://api.devnet.solana.com
+solana airdrop 2 3PcFvGzZAtcjS1RnysdYVXgfghfhWWGF1vEoZECtaC59 --url https://api.devnet.solana.com
+solana airdrop 2 3PcFvGzZAtcjS1RnysdYVXgfghfhWWGF1vEoZECtaC59 --url https://api.devnet.solana.com
+solana airdrop 2 3PcFvGzZAtcjS1RnysdYVXgfghfhWWGF1vEoZECtaC59 --url https://api.devnet.solana.com
+solana airdrop 2 3PcFvGzZAtcjS1RnysdYVXgfghfhWWGF1vEoZECtaC59 --url https://api.devnet.solana.com
+solana airdrop 2 3PcFvGzZAtcjS1RnysdYVXgfghfhWWGF1vEoZECtaC59 --url https://api.devnet.solana.com

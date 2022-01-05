@@ -1,0 +1,9 @@
+{
+    "NETWORK": "devnet",
+    "MY_PUBLIC_KEY": "9MJzW1oEzvjHnmdLdoGRGr1i4hu82g7eEEnxvmifcDZD",
+    "PRICE":0.01,
+    "MAX_BUY":10,
+    "backend_endpoint_base":"http://localhost:9000/api/",
+    "prelaunch_count":2000,
+    "prelaunch_discount":25
+}

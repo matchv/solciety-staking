@@ -1,0 +1,259 @@
+D:\mike\solmates\app_backend\solmate>solana logs 9MJzW1oEzvjHnmdLdoGRGr1i4hu82g7eEEnxvmifcDZD
+Streaming transaction logs mentioning 9MJzW1oEzvjHnmdLdoGRGr1i4hu82g7eEEnxvmifcDZD. Confirmed commitment
+Transaction executed in slot 102496638:
+  Signature: 52Gx1MZk7jYQfrt97ghyVjDZKgiesE6EnoofZU9N2AD3HSnuuV8oZqesJ7kWAp1JTuSsKGSGhXL4JDTqm2P6aFRg
+  Status: Ok
+  Log Messages:
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw invoke [1]
+    Program consumption: 198301 units remaining
+    Program log: [Reward 1] Resolve accounts
+    Program log: [Reward 2] Get proj config
+    Program log: [Reward 3] Load Gcdm
+    Program log: [Reward 4] Load Gsdm
+    Program log: [Reward 5] Calc current slot
+    Program log: [Reward 6] Iterate over slot gap and update Gcdm
+    Program consumption: 197488 units remaining
+    Program log: nft_count=========1145
+    Program consumption: 14770 units remaining
+    Program log: [Reward 7] Update Pwdm
+    Program log: [Reward 8] Save Pwdm
+    Program log: [Reward 9] Save Gcdm
+    Program log: [Reward 10] Reward is completed!
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw consumed 186202 of 200000 compute units
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw success
+Transaction executed in slot 102496698:
+  Signature: 4wjga3AVTZ5bDF42y6SQyVnP76cpRwtyaNtuPNoCspV7RQTMCbwix7ZkcFQxnXkzzEW1S16UAbPz1t3BzS3QwfyS
+  Status: Ok
+  Log Messages:
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw invoke [1]
+    Program consumption: 198301 units remaining
+    Program log: [Reward 1] Resolve accounts
+    Program log: [Reward 2] Get proj config
+    Program log: [Reward 3] Load Gcdm
+    Program log: [Reward 4] Load Gsdm
+    Program log: [Reward 5] Calc current slot
+    Program log: [Reward 6] Iterate over slot gap and update Gcdm
+    Program consumption: 197488 units remaining
+    Program log: nft_count=========1145
+    Program consumption: 11341 units remaining
+    Program log: [Reward 7] Update Pwdm
+    Program log: [Reward 8] Save Pwdm
+    Program log: [Reward 9] Save Gcdm
+    Program log: [Reward 10] Reward is completed!
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw consumed 189631 of 200000 compute units
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw success
+Transaction executed in slot 102496748:
+  Signature: 4EqGbjz2kRQv4cPU5Hwrnv3TKXupkPrjFa5mxfKi7LmwVSuELDj7C9pRm9VxQEy2UqLnYkqpiCibvVG5K3bPXSxz
+  Status: Ok
+  Log Messages:
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw invoke [1]
+    Program consumption: 198301 units remaining
+    Program log: [Reward 1] Resolve accounts
+    Program log: [Reward 2] Get proj config
+    Program log: [Reward 3] Load Gcdm
+    Program log: [Reward 4] Load Gsdm
+    Program log: [Reward 5] Calc current slot
+    Program log: [Reward 6] Iterate over slot gap and update Gcdm
+    Program consumption: 197488 units remaining
+    Program log: nft_count=========1145
+    Program consumption: 20485 units remaining
+    Program log: [Reward 7] Update Pwdm
+    Program log: [Reward 8] Save Pwdm
+    Program log: [Reward 9] Save Gcdm
+    Program log: [Reward 10] Reward is completed!
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw consumed 180487 of 200000 compute units
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw success
+Transaction executed in slot 102496798:
+  Signature: 3ToqYiyQ88HkUz7PnkPpkfBpzADCKu3thDDYZMtYbx7waxnqZPXMPzMtEMXgBbRWtAmet9JKhoAhfbyP8qLiwVax
+  Status: Ok
+  Log Messages:
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw invoke [1]
+    Program consumption: 198301 units remaining
+    Program log: [Reward 1] Resolve accounts
+    Program log: [Reward 2] Get proj config
+    Program log: [Reward 3] Load Gcdm
+    Program log: [Reward 4] Load Gsdm
+    Program log: [Reward 5] Calc current slot
+    Program log: [Reward 6] Iterate over slot gap and update Gcdm
+    Program consumption: 197488 units remaining
+    Program log: nft_count=========1145
+    Program consumption: 20485 units remaining
+    Program log: [Reward 7] Update Pwdm
+    Program log: [Reward 8] Save Pwdm
+    Program log: [Reward 9] Save Gcdm
+    Program log: [Reward 10] Reward is completed!
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw consumed 180487 of 200000 compute units
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw success
+Transaction executed in slot 102496836:
+  Signature: Zq7YvRBAycWdked8Y3QyGkKnpDj9LRR6E1zYBKZq4N18gsztgJ3gApvbetYbCAEym26kaoYZhUHeprit27zwEHT
+  Status: Ok
+  Log Messages:
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw invoke [1]
+    Program consumption: 198301 units remaining
+    Program log: [Reward 1] Resolve accounts
+    Program log: [Reward 2] Get proj config
+    Program log: [Reward 3] Load Gcdm
+    Program log: [Reward 4] Load Gsdm
+    Program log: [Reward 5] Calc current slot
+    Program log: [Reward 6] Iterate over slot gap and update Gcdm
+    Program consumption: 197488 units remaining
+    Program log: nft_count=========1145
+    Program consumption: 11341 units remaining
+    Program log: [Reward 7] Update Pwdm
+    Program log: [Reward 8] Save Pwdm
+    Program log: [Reward 9] Save Gcdm
+    Program log: [Reward 10] Reward is completed!
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw consumed 189631 of 200000 compute units
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw success
+Transaction executed in slot 102496905:
+  Signature: 44V6qNJBBKcsz5U5P9dmWQDTKSHzubDyM38yG5ZNvp98sh7AXHMKCa815rBokoS3VoCdpzLazjkCLmbRpngAy4hb
+  Status: Ok
+  Log Messages:
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw invoke [1]
+    Program consumption: 198301 units remaining
+    Program log: [Reward 1] Resolve accounts
+    Program log: [Reward 2] Get proj config
+    Program log: [Reward 3] Load Gcdm
+    Program log: [Reward 4] Load Gsdm
+    Program log: [Reward 5] Calc current slot
+    Program log: [Reward 6] Iterate over slot gap and update Gcdm
+    Program consumption: 197488 units remaining
+    Program log: nft_count=========1145
+    Program consumption: 20485 units remaining
+    Program log: [Reward 7] Update Pwdm
+    Program log: [Reward 8] Save Pwdm
+    Program log: [Reward 9] Save Gcdm
+    Program log: [Reward 10] Reward is completed!
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw consumed 180487 of 200000 compute units
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw success
+Transaction executed in slot 102496926:
+  Signature: 2i52H6eXdfY2U56PFXLsGsGEw9HMK8EszFDiAPtiu9Kf5yHYHTDfWi8WiJtGDUuQjCdgidwQUkNnKUZKZeDH6i47
+  Status: Ok
+  Log Messages:
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw invoke [1]
+    Program consumption: 198301 units remaining
+    Program log: [Reward 1] Resolve accounts
+    Program log: [Reward 2] Get proj config
+    Program log: [Reward 3] Load Gcdm
+    Program log: [Reward 4] Load Gsdm
+    Program log: [Reward 5] Calc current slot
+    Program log: [Reward 6] Iterate over slot gap and update Gcdm
+    Program consumption: 197488 units remaining
+    Program log: nft_count=========1145
+    Program consumption: 20485 units remaining
+    Program log: [Reward 7] Update Pwdm
+    Program log: [Reward 8] Save Pwdm
+    Program log: [Reward 9] Save Gcdm
+    Program log: [Reward 10] Reward is completed!
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw consumed 180487 of 200000 compute units
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw success
+Transaction executed in slot 102496942:
+  Signature: 2fqsrfzdRAhs1LN4tNqGfL6tnaayz1jo6GijJ19KtmttTgEE7phKmzZ4duU14jQUqD6RTaeMHaRh5z1io5FmJQtR
+  Status: Ok
+  Log Messages:
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw invoke [1]
+    Program consumption: 198301 units remaining
+    Program log: [Reward 1] Resolve accounts
+    Program log: [Reward 2] Get proj config
+    Program log: [Reward 3] Load Gcdm
+    Program log: [Reward 4] Load Gsdm
+    Program log: [Reward 5] Calc current slot
+    Program log: [Reward 6] Iterate over slot gap and update Gcdm
+    Program consumption: 197488 units remaining
+    Program log: nft_count=========1145
+    Program consumption: 20485 units remaining
+    Program log: [Reward 7] Update Pwdm
+    Program log: [Reward 8] Save Pwdm
+    Program log: [Reward 9] Save Gcdm
+    Program log: [Reward 10] Reward is completed!
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw consumed 180487 of 200000 compute units
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw success
+Transaction executed in slot 102496965:
+  Signature: 5LCS5Tkc8W2do4PpBVJseBkZBrUoixkDjnS5CHeW5mEoqCTesrn1uTg2hUGxRjgp9hVDFgxbun4k4fWA8Mtxnzvp
+  Status: Ok
+  Log Messages:
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw invoke [1]
+    Program consumption: 198301 units remaining
+    Program log: [Reward 1] Resolve accounts
+    Program log: [Reward 2] Get proj config
+    Program log: [Reward 3] Load Gcdm
+    Program log: [Reward 4] Load Gsdm
+    Program log: [Reward 5] Calc current slot
+    Program log: [Reward 6] Iterate over slot gap and update Gcdm
+    Program consumption: 197488 units remaining
+    Program log: nft_count=========1145
+    Program consumption: 20485 units remaining
+    Program log: [Reward 7] Update Pwdm
+    Program log: [Reward 8] Save Pwdm
+    Program log: [Reward 9] Save Gcdm
+    Program log: [Reward 10] Reward is completed!
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw consumed 180487 of 200000 compute units
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw success
+Disconnected: receiving on a closed channel
+
+D:\mike\solmates\app_backend\solmate>
+D:\mike\solmates\app_backend\solmate>
+D:\mike\solmates\app_backend\solmate>
+D:\mike\solmates\app_backend\solmate>
+D:\mike\solmates\app_backend\solmate>
+D:\mike\solmates\app_backend\solmate>
+D:\mike\solmates\app_backend\solmate>
+D:\mike\solmates\app_backend\solmate>
+D:\mike\solmates\app_backend\solmate>
+D:\mike\solmates\app_backend\solmate>
+D:\mike\solmates\app_backend\solmate>
+D:\mike\solmates\app_backend\solmate>
+D:\mike\solmates\app_backend\solmate>
+D:\mike\solmates\app_backend\solmate>
+D:\mike\solmates\app_backend\solmate>
+D:\mike\solmates\app_backend\solmate>solana logs 9MJzW1oEzvjHnmdLdoGRGr1i4hu82g7eEEnxvmifcDZD
+Streaming transaction logs mentioning 9MJzW1oEzvjHnmdLdoGRGr1i4hu82g7eEEnxvmifcDZD. Confirmed commitment
+Transaction executed in slot 102536891:
+  Signature: gjPLRtpk58n5Wzs5ExWhcvvCP95YCoi6dBxepuGigMxoidtwgm4kTrPYMLHRak3Q692UNsfvvUFrf7BExPm5Ny2
+  Status: Ok
+  Log Messages:
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw invoke [1]
+    Program consumption: 198301 units remaining
+    Program log: [Reward 1] Resolve accounts
+    Program log: [Reward 2] Get proj config
+    Program log: [Reward 3] Load Gcdm
+    Program log: [Reward 4] Load Gsdm
+    Program log: [Reward 5] Calc current slot
+    Program log: [Reward 6] Iterate over slot gap and update Gcdm
+    Program consumption: 197494 units remaining
+    Program log: nft_count=========1145
+    Program consumption: 80323 units remaining
+    Program log: [Reward 7] Update Pwdm
+    Program log: [Reward 8] Save Pwdm
+    Program log: [Reward 9] Save Gcdm
+    Program log: [Reward 10] Reward is completed!
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw consumed 120417 of 200000 compute units
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw success
+Disconnected: receiving on a closed channel
+
+
+=================================trasform floating point computation to integer computation==========================
+D:\mike\solmates\app_backend\solmate>solana logs 9MJzW1oEzvjHnmdLdoGRGr1i4hu82g7eEEnxvmifcDZD
+Streaming transaction logs mentioning 9MJzW1oEzvjHnmdLdoGRGr1i4hu82g7eEEnxvmifcDZD. Confirmed commitment
+Transaction executed in slot 102537385:
+  Signature: 3X19fYpMV1vYatezwSZaLqcjH16JWk5GwvR489jUam1VVj9etXTWydsR1Powvfif5h3zZ1NTkppy9MWsX1XRvzLm
+  Status: Ok
+  Log Messages:
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw invoke [1]
+    Program consumption: 198301 units remaining
+    Program log: [Reward 1] Resolve accounts
+    Program log: [Reward 2] Get proj config
+    Program log: [Reward 3] Load Gcdm
+    Program log: [Reward 4] Load Gsdm
+    Program log: [Reward 5] Calc current slot
+    Program log: [Reward 6] Iterate over slot gap and update Gcdm
+    Program consumption: 197494 units remaining
+    Program log: nft_count=========1900
+    Program consumption: 3313 units remaining
+    Program log: [Reward 7] Update Pwdm
+    Program log: [Reward 8] Save Pwdm
+    Program log: [Reward 9] Save Gcdm
+    Program log: [Reward 10] Reward is completed!
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw consumed 197427 of 200000 compute units
+    Program HAoqALFTiyibSRgh63qUWX1sdxt82R3hCqSwAmk8Pysw success
+Disconnected: receiving on a closed channel
