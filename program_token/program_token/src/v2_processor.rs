@@ -98,8 +98,8 @@ impl Processor {
         let raw_data_cofig = acc_config.data.borrow_mut();
         let proj_config = ConfigDM::unpack_unchecked(&raw_data_cofig)?;
 
-        Self::check_acc_init(&acc_init, &proj_config);
-        Self::check_owner(&acc_config, &program_id);
+        Self::check_acc_init(&acc_init, &proj_config)?;
+        Self::check_owner(&acc_config, &program_id)?;
 
         
         // 2. Transfer $CIETY to staker
@@ -207,8 +207,8 @@ impl Processor {
         
         // 3. Check if the config account has been initialized
         msg!("[Init 3] Check if the config account has been initialized");
-        Self::check_rent(acc_rent, acc_config, SolmateTokenError::NotRentExempt_ConfigDM);
-        Self::check_size(acc_config, ConfigDM::LEN, SolmateTokenError::ConfigAccountWrongSize);
+        Self::check_rent(acc_rent, acc_config, SolmateTokenError::NotRentExempt_ConfigDM)?;
+        Self::check_size(acc_config, ConfigDM::LEN, SolmateTokenError::ConfigAccountWrongSize)?;
         let mut proj_config_raw = acc_config.data.borrow_mut();
         let mut proj_config = ConfigDM::unpack_unchecked(&proj_config_raw)?;
         if proj_config.is_initialized() {
@@ -245,20 +245,12 @@ impl Processor {
 
         // 5. Decode and update NFT authors
         msg!("[Init 5] Decode and update NFT authors");
-        // let mut nft_author_cnts = 0;        
-        // let mut auther_bytes:[u8; 32] = [0u8; 32];
         while let Some(acc) = account_iter.next() {
-            // let ind_config = ConfigDM::NEXT_IND + nft_author_cnts * ConfigDM::REPEATED_SIZE;
-            // auther_bytes.copy_from_slice(acc.key.as_ref());
-            // for i in 0usize..32usize {
-            //     proj_config_raw[ind_config + i] = auther_bytes[i];
-            // }
-            // nft_author_cnts = nft_author_cnts + 1;
             proj_config.nft_authors.push(*acc.key);
         }
-        // if(nft_author_cnts > ConfigDM::MAX_NFT_AUTHORS){
-        //     return Err(SolmateTokenError::MaxNFTAuthorLimitExceeded.into());
-        // }
+        if(nft_author_cnt > ConfigDM::MAX_NFT_AUTHORS as u8){
+            return Err(SolmateTokenError::MaxNFTAuthorLimitExceeded.into());
+        }
 
         // 6. Save ConfigDM
         msg!("[Init 6] Save ConfigDM");

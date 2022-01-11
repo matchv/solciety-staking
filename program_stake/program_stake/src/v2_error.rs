@@ -99,6 +99,39 @@ pub enum SolmateStakeError {
     /// Rpdm does not have enough SOLs for rent exemption
     #[error("Rpdm does not have enough SOLs for rent exemption")]
     RpdmNotRentExempted,
+
+    /// The given current slot is larger than the project's max_stake_days
+    #[error("The given current slot is larger than the project's max_stake_days")]
+    CurrentSlotLargerThanProjStakeMaxDays,
+
+    /// The predefined total_nfts in project config can't be exceeded when staking
+    #[error("The predefined total_nfts in project config can't be exceeded when staking")]
+    TotalNFTSExceeded,
+
+    /// The staking start_slot can't be larger than the project's max_stake_days
+    #[error("The staking start_slot can't be larger than the project's max_stake_days")]
+    StakingStartSlotLargerThanProjStakeMaxDays,  
+
+    /// The given slot to calc can't be larger than the pre-defined stake_max_days
+    #[error("The given slot to calc can't be larger than the pre-defined stake_max_days")]
+    GvienSlotToCalcLargerThanProjStakeMaxDays,
+
+    /// OverflowOnU16
+    #[error("OverflowOnU16")]
+    OverflowOnU16,
+
+    /// OverflowOnUsize
+    #[error("OverflowOnUsize")]
+    OverflowOnUsize,
+
+    /// OverflowOnU64
+    #[error("OverflowOnU64")]
+    OverflowOnU64,
+
+    /// OverflowOnF64
+    #[error("OverflowOnF64")]
+    OverflowOnF64, 
+    
     
     
 }
@@ -108,3 +141,4 @@ impl From<SolmateStakeError> for ProgramError {
         ProgramError::Custom(e as u32)
     }
 }
+

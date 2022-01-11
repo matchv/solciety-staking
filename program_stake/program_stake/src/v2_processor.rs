@@ -73,10 +73,10 @@ impl Processor {
         let config_raw = acc_config.data.borrow();
         let proj_config = ConfigDM::unpack_unchecked(&config_raw)?;
      
-        Self::check_acc_init(&acc_init, &proj_config);
-        Self::check_owner(&acc_pwdm, &program_id);
-        Self::check_owner(&acc_gcdm, &program_id);
-        Self::check_owner(&acc_config, &acc_solmate_token_prog.key);
+        Self::check_acc_init(&acc_init, &proj_config)?;
+        Self::check_owner(&acc_pwdm, &program_id)?;
+        Self::check_owner(&acc_gcdm, &program_id)?;
+        Self::check_owner(&acc_config, &acc_solmate_token_prog.key)?;
 
         // 3. Load Pwdm
         msg!("[Check_expiration 3] Load Pwdm");
@@ -137,18 +137,23 @@ impl Processor {
         msg!("[Reward_Prep 2] Load Config");
         let mut config_raw = acc_config.data.borrow_mut();
         let mut proj_config = ConfigDM::unpack_unchecked(&config_raw)?;
+
+        // added after code audit, Jan 10, 2022
+        if curr_slot > proj_config.stake_max_days {
+            return Err(SolmateStakeError::CurrentSlotLargerThanProjStakeMaxDays.into());
+        }
      
-        Self::check_acc_init(&acc_init, &proj_config);
-        Self::check_owner(&acc_rpdm, &program_id);
-        Self::check_owner(&acc_gcdm, &program_id);
-        Self::check_owner(&acc_gsdm, &program_id);
-        Self::check_owner(&acc_config, &acc_solmate_token_prog.key);
+        Self::check_acc_init(&acc_init, &proj_config)?;
+        Self::check_owner(&acc_rpdm, &program_id)?;
+        Self::check_owner(&acc_gcdm, &program_id)?;
+        Self::check_owner(&acc_gsdm, &program_id)?;
+        Self::check_owner(&acc_config, &acc_solmate_token_prog.key)?;
 
         // 3. Load Rpdm
         msg!("[Reward_Prep 3] Load Rpdm"); 
         if acc_rpdm.data.borrow()[0] == 0 {
-            Self::check_rent(acc_rent, acc_rpdm, SolmateStakeError::RpdmNotRentExempted);
-            Self::check_size(acc_rpdm, Rpdm::LEN, SolmateStakeError::RpdmAccountWrongSize);
+            Self::check_rent(acc_rent, acc_rpdm, SolmateStakeError::RpdmNotRentExempted)?;
+            Self::check_size(acc_rpdm, Rpdm::LEN, SolmateStakeError::RpdmAccountWrongSize)?;
         }
         let mut rpdm_raw = acc_rpdm.data.borrow_mut();
         let mut rpdm = Rpdm::unpack_unchecked(&rpdm_raw)?;
@@ -180,7 +185,7 @@ impl Processor {
                 continue;
             }
             // accumulated counts of slots to be calculated
-            total_slots_to_calc = total_slots_to_calc + 1;
+            total_slots_to_calc.checked_add(1).ok_or(SolmateStakeError::OverflowOnU16);
 
             let nft_last_ind = Self::gsdm_decode_nft_last_ind(&mut gsdm_raw, slot as u16, proj_config.total_nfts);
 
@@ -235,10 +240,10 @@ impl Processor {
         let config_raw = acc_config.data.borrow();
         let proj_config = ConfigDM::unpack_unchecked(&config_raw)?;
      
-        Self::check_acc_init(&acc_init, &proj_config);
-        Self::check_owner(&acc_pwdm, &program_id);
-        Self::check_owner(&acc_gcdm, &program_id);
-        Self::check_owner(&acc_config, &acc_solmate_token_prog.key);
+        Self::check_acc_init(&acc_init, &proj_config)?;
+        Self::check_owner(&acc_pwdm, &program_id)?;
+        Self::check_owner(&acc_gcdm, &program_id)?;
+        Self::check_owner(&acc_config, &acc_solmate_token_prog.key)?;
 
         // 3. Load Pwdm
         msg!("[Reward_claim 3] Load Pwdm");
@@ -315,10 +320,10 @@ impl Processor {
         let mut config_raw = acc_config.data.borrow_mut();
         let mut proj_config = ConfigDM::unpack_unchecked(&config_raw)?;
      
-        Self::check_acc_init(&acc_init, &proj_config);
-        Self::check_owner(&acc_pwdm, &program_id);
-        Self::check_owner(&acc_gcdm, &program_id);
-        Self::check_owner(&acc_config, &acc_solmate_token_prog.key);
+        Self::check_acc_init(&acc_init, &proj_config)?;
+        Self::check_owner(&acc_pwdm, &program_id)?;
+        Self::check_owner(&acc_gcdm, &program_id)?;
+        Self::check_owner(&acc_config, &acc_solmate_token_prog.key)?;
 
         // 3. Load Pwdm
         msg!("[Reward_view 3] Load Pwdm");
@@ -369,11 +374,11 @@ impl Processor {
         let mut proj_config = ConfigDM::unpack_unchecked(&config_raw)?;
         let total_nfts_usize = proj_config.total_nfts as usize;
      
-        Self::check_acc_init(&acc_init, &proj_config);
-        Self::check_owner(&acc_pwdm, &program_id);
-        Self::check_owner(&acc_gcdm, &program_id);
-        Self::check_owner(&acc_gsdm, &program_id);
-        Self::check_owner(&acc_config, &acc_solmate_token_prog.key);
+        Self::check_acc_init(&acc_init, &proj_config)?;
+        Self::check_owner(&acc_pwdm, &program_id)?;
+        Self::check_owner(&acc_gcdm, &program_id)?;
+        Self::check_owner(&acc_gsdm, &program_id)?;
+        Self::check_owner(&acc_config, &acc_solmate_token_prog.key)?;
 
         if nft_num > proj_config.max_stake_each_time {
             return Err(SolmateStakeError::ExceedMaxNftEachTime.into());
@@ -389,8 +394,8 @@ impl Processor {
         // 3. Load Pwdm
         msg!("[Stake 3] Load Pwdm");
         if acc_pwdm.data.borrow()[0] == 0 {
-            Self::check_rent(acc_rent, acc_pwdm, SolmateStakeError::PwdmNotRentExempted);
-            Self::check_size(acc_pwdm, Pwdm::LEN, SolmateStakeError::PwdmAccountWrongSize);
+            Self::check_rent(acc_rent, acc_pwdm, SolmateStakeError::PwdmNotRentExempted)?;
+            Self::check_size(acc_pwdm, Pwdm::LEN, SolmateStakeError::PwdmAccountWrongSize)?;
         }
         let mut pwdm_raw = acc_pwdm.data.borrow_mut();
         let mut pwdm = Pwdm::unpack_unchecked(&pwdm_raw)?;
@@ -411,8 +416,8 @@ impl Processor {
         // 4. Load Gcdm
         msg!("[Stake 4] Load Gcdm"); 
         if acc_gcdm.data.borrow()[0] == 0 {
-            Self::check_rent(acc_rent, acc_gcdm, SolmateStakeError::GcdmNotRentExempted);
-            Self::check_size(acc_gcdm, Gcdm::LEN, SolmateStakeError::GcdmAccountWrongSize);
+            Self::check_rent(acc_rent, acc_gcdm, SolmateStakeError::GcdmNotRentExempted)?;
+            Self::check_size(acc_gcdm, Gcdm::LEN, SolmateStakeError::GcdmAccountWrongSize)?;
         }
         let mut gcdm_raw = acc_gcdm.data.borrow_mut();
         let mut gcdm = Gcdm::unpack_unchecked(&gcdm_raw)?;
@@ -424,12 +429,18 @@ impl Processor {
         if !*is_initialized {
             *is_initialized = true;
         }
+        
+        // added after code audit, Jan 10, 2022
+        // the number of NFTs to be staked this time plus the number of already staked can't be larger than total_nfts
+        if nft_num + *global_nft_count > proj_config.total_nfts {
+            return Err(SolmateStakeError::TotalNFTSExceeded.into());
+        }
 
         // 5. Load Gsdm
         msg!("[Stake 5] Load Gsdm");
         if acc_gsdm.data.borrow()[0] == 0 {
-            Self::check_rent(acc_rent, acc_gsdm, SolmateStakeError::GsdmNotRentExempted);
-            Self::check_size(acc_gsdm, Gsdm::LEN, SolmateStakeError::GsdmAccountWrongSize);
+            Self::check_rent(acc_rent, acc_gsdm, SolmateStakeError::GsdmNotRentExempted)?;
+            Self::check_size(acc_gsdm, Gsdm::LEN, SolmateStakeError::GsdmAccountWrongSize)?;
         }
         let mut gsdm_raw = acc_gsdm.data.borrow_mut();
         let mut gsdm = Gsdm::unpack_unchecked(&gsdm_raw)?;
@@ -439,14 +450,25 @@ impl Processor {
         if !*is_initialized {
             *is_initialized = true;
         }
-
         
         // 6. Calculate start_slot and end_slot of staked NFTs
         msg!("[Stake 6] Calculate start_slot and end_slot of staked NFTs");
         let now = clock.unix_timestamp;
         let now_bytes = now.to_le_bytes();
         let start_slot = Self::calc_slot(now, proj_config.decay_frequency_seconds, proj_config.init_timestamp);
-        let end_slot = start_slot + time_length_days;
+        
+        // added after code audit, Jan 10, 2022
+        // The start_slot of this time of staking can't be larger than the pre-defined stake_max_days
+        if start_slot > proj_config.stake_max_days {
+            return Err(SolmateStakeError::StakingStartSlotLargerThanProjStakeMaxDays.into());
+        }
+
+        // enhanced after code audit, Jan 10, 2022
+        // if the end_slot is larger than predefiend stake_max_days its exceeding is cut off and set it to stake_max_days
+        let mut end_slot = start_slot + time_length_days;
+        if end_slot > proj_config.stake_max_days {
+            end_slot = proj_config.stake_max_days;
+        }
 
         // 7. Update Gsdm and Gcdm
         msg!("[Stake 7] Update Gsdm and Gcdm");
@@ -477,7 +499,7 @@ impl Processor {
                 }
 
                 // 8.0 Update Gcdm.global_nft_count
-                *global_nft_count = *global_nft_count + 1;
+                (*global_nft_count).checked_add(1).ok_or(SolmateStakeError::OverflowOnU16);
                 let global_nft_count_bytes = ((*global_nft_count - 1) as u16).to_le_bytes();
 
                 // 8.1 Update Gcdm, start_slot, end_slot
@@ -492,13 +514,13 @@ impl Processor {
                 // 8.2 Update Pwdm
                 // 8.2.1 nft_account
                 let mut ind_pwdm = Pwdm::NEXT_IND + (*nft_count) as usize * Pwdm::REPEATED_SIZE;
-                *nft_count = *nft_count + 1;
+                (*nft_count).checked_add(1).ok_or(SolmateStakeError::OverflowOnU16);
                 let acc_nft = acc_tmp_nft.as_ref().unwrap().clone();
                 let acc_nft_bytes = acc_nft.key.as_ref();
                 for i in 0usize..32usize {
                     pwdm_raw[ind_pwdm + i] = acc_nft_bytes[i];
                 }
-                ind_pwdm = ind_pwdm + 32;
+                ind_pwdm.checked_add(32).ok_or(SolmateStakeError::OverflowOnUsize);
                 
                 // 8.2.2 nft_mint
                 let acc_mint = acc_tmp_mint.as_ref().unwrap().clone();
@@ -506,7 +528,7 @@ impl Processor {
                 for i in 0usize..32usize {
                     pwdm_raw[ind_pwdm + i] = acc_mint_bytes[i];
                 }
-                ind_pwdm = ind_pwdm + 32;
+                ind_pwdm.checked_add(32).ok_or(SolmateStakeError::OverflowOnUsize);
 
                 // 8.2.4 nft_nth
                 pwdm_raw[ind_pwdm]     = global_nft_count_bytes[0];
@@ -524,7 +546,7 @@ impl Processor {
                 pwdm_raw[ind_pwdm + 7] = now_bytes[7];
 
                 // 8.2.6 time_length_days
-                ind_pwdm = ind_pwdm + 8;
+                ind_pwdm.checked_add(8).ok_or(SolmateStakeError::OverflowOnUsize);
                 pwdm_raw[ind_pwdm] = time_length_days_bytes[0];
                 pwdm_raw[ind_pwdm + 1] = time_length_days_bytes[1];
                 
@@ -537,7 +559,7 @@ impl Processor {
                     tmp[0] = gsdm_raw[gsdm_ind];
                     tmp[1] = gsdm_raw[gsdm_ind + 1];
                     let mut nft_count = u16::from_le_bytes(tmp);
-                    nft_count = nft_count + 1;
+                    nft_count.checked_add(1).ok_or(SolmateStakeError::OverflowOnU16);
                     let nft_count_bytes = nft_count.to_le_bytes();
                     gsdm_raw[gsdm_ind]     = nft_count_bytes[0];
                     gsdm_raw[gsdm_ind + 1] = nft_count_bytes[1];
@@ -567,7 +589,7 @@ impl Processor {
                     &[acc_nft.clone(), acc_staker.clone(), acc_token_prog.clone()],
                 )?;
             }
-            ind = ind + 1;
+            ind.checked_add(1).ok_or(SolmateStakeError::OverflowOnUsize);
         }
         
         // 8.  Save Pwdm
@@ -603,14 +625,20 @@ impl Processor {
         msg!("[Reward Calc 2] Load Config");
         let mut raw_data_cofig = acc_config.data.borrow_mut();
         let mut proj_config = ConfigDM::unpack_unchecked(&raw_data_cofig)?;
+        
+        // added after code audit, Jan 10, 2022
+        // The given slot to calc can't be larger than the pre-defined stake_max_days
+        if slot > proj_config.stake_max_days {
+            return Err(SolmateStakeError::GvienSlotToCalcLargerThanProjStakeMaxDays.into());
+        }
 
         let ciety_end_slot = proj_config.end_slot;
         let total_nfts_usize = proj_config.total_nfts as usize;
      
-        Self::check_acc_init(&acc_init, &proj_config);
-        Self::check_owner(&acc_gcdm, &program_id);
-        Self::check_owner(&acc_gsdm, &program_id);
-        Self::check_owner(&acc_config, &acc_solmate_token_prog.key);
+        Self::check_acc_init(&acc_init, &proj_config)?;
+        Self::check_owner(&acc_gcdm, &program_id)?;
+        Self::check_owner(&acc_gsdm, &program_id)?;
+        Self::check_owner(&acc_config, &acc_solmate_token_prog.key)?;
         
         // 3. Load Gcdm
         msg!("[Reward Calc 3] Load Gcdm");
@@ -652,12 +680,10 @@ impl Processor {
         let mut c:[u8;8] = [0u8;8];
         for ind in start_nft_ind as usize..(end_nft_ind + 1) as usize {
             let staked = (gsdm_raw[gsdm_ind + ind] == 1);
-            // gsdm_ind = gsdm_ind + ind + 1;
-
             if staked {
                 // decode Gcdm.nft_ciety
                 let mut nft_ciety = Self::gcdm_decode_nft_ciety(ind as u16, &gcdm_raw, &mut c);
-                nft_ciety = nft_ciety + ciety_emit / nft_count as u64;
+                nft_ciety.checked_add(ciety_emit / nft_count as u64).ok_or(SolmateStakeError::OverflowOnU64);
                 
                 // update Gcdm.nft_ciety
                 let mut gcdm_ind = Gcdm::NEXT_IND + ind * Gcdm::REPEATED_SIZE;
@@ -701,11 +727,11 @@ impl Processor {
         let mut raw_data_cofig = acc_config.data.borrow_mut();
         let mut proj_config = ConfigDM::unpack_unchecked(&raw_data_cofig)?;
      
-        Self::check_acc_init(&acc_init, &proj_config);
-        Self::check_owner(&acc_pwdm, &program_id);
-        Self::check_owner(&acc_gcdm, &program_id);
-        Self::check_owner(&acc_gsdm, &program_id);
-        Self::check_owner(&acc_config, &acc_solmate_token_prog.key);
+        Self::check_acc_init(&acc_init, &proj_config)?;
+        Self::check_owner(&acc_pwdm, &program_id)?;
+        Self::check_owner(&acc_gcdm, &program_id)?;
+        Self::check_owner(&acc_gsdm, &program_id)?;
+        Self::check_owner(&acc_config, &acc_solmate_token_prog.key)?;
 
         // 3. Load Pwdm
         msg!("[Increse Time Length 3] Load Pwdm");
@@ -755,6 +781,12 @@ impl Processor {
             
             // 5.2 Calculate Gcdm.end_slot
             let mut end_slot_new = end_slot + increased_time_length_days;
+            
+            // enhanced after code audit, Jan 10, 2022
+            // this is for each staked NFT, if the end_slot_new is larger than predefiend stake_max_days its exceeding is cut off and set it to stake_max_days
+            if end_slot_new > proj_config.stake_max_days {
+                end_slot_new = proj_config.stake_max_days;
+            }
 
             // 5.3 Decode Pwdm.nft_nth
             let nft_nth = Self::pwdm_decode_nft_nth(ind, &pwdm_raw, &mut a);
@@ -767,7 +799,7 @@ impl Processor {
                 a[0] = gsdm_raw[gsdm_ind];
                 a[1] = gsdm_raw[gsdm_ind + 1];
                 let mut nft_count = u16::from_le_bytes(a);
-                nft_count = nft_count + 1;
+                nft_count.checked_add(1).ok_or(SolmateStakeError::OverflowOnU16);
                 let nft_count_bytes = nft_count.to_le_bytes();
                 gsdm_raw[gsdm_ind]     = nft_count_bytes[0];
                 gsdm_raw[gsdm_ind + 1] = nft_count_bytes[1];
@@ -843,10 +875,10 @@ impl Processor {
         let proj_config = ConfigDM::unpack_unchecked(&raw_data_cofig)?;
         let seed_pda_nft = proj_config.seed_pda_nft.as_bytes();
      
-        Self::check_acc_init(&acc_init, &proj_config);
-        Self::check_owner(&acc_pwdm, &program_id);
-        Self::check_owner(&acc_gcdm, &program_id);
-        Self::check_owner(&acc_config, &acc_solmate_token_prog.key);
+        Self::check_acc_init(&acc_init, &proj_config)?;
+        Self::check_owner(&acc_pwdm, &program_id)?;
+        Self::check_owner(&acc_gcdm, &program_id)?;
+        Self::check_owner(&acc_config, &acc_solmate_token_prog.key)?;
 
         // 3. Load Pwdm
         msg!("[Unstake 3] Load Pwdm");
@@ -867,7 +899,7 @@ impl Processor {
         let mut acc_mint:Option<AccountInfo<'_>> = None;
         let mut ind = 0usize;
         let mut a:[u8;2] = [0u8;2];
-        let mut unstaked_cnt = 016;
+        let mut unstaked_cnt = 0u16;
         while let Some(acc) = account_iter.next() {
             let r = ind % 4;
             if r == 0 {
@@ -903,13 +935,13 @@ impl Processor {
                     &[&[&seed_pda_nft[..], &mint_acc.key.as_ref()[..], &[nonce]]],
                 )?;
                 
-                unstaked_cnt = unstaked_cnt + 1;
+                unstaked_cnt.checked_add(1).ok_or(SolmateStakeError::OverflowOnU16);
 
                 if(unstaked_cnt as u8 > proj_config.unstake_batch_size){
                     return Err(SolmateStakeError::UnstakeLimitExceeded.into());
                 }
             }
-            ind = ind + 1;
+            ind.checked_add(1).ok_or(SolmateStakeError::OverflowOnUsize);
         }
 
         if(pwdm.unstake_start + unstaked_cnt == pwdm.nft_count){
@@ -956,7 +988,8 @@ impl Processor {
             // 8. Save Pwdm
             msg!("[Unstake 8] Save Pwdm and calc the number of NFTs to be unstaked");
             let leftover = pwdm.nft_count - pwdm.unstake_start - unstaked_cnt;
-            pwdm.unstake_start = pwdm.unstake_start + unstaked_cnt;
+            pwdm.unstake_start.checked_add(unstaked_cnt).ok_or(SolmateStakeError::OverflowOnU16);
+
             Pwdm::pack(pwdm, &mut pwdm_raw)?;
 
             msg!("[Unstake 9] Still have {} NFTs to be unstaked.", leftover);
@@ -1092,7 +1125,7 @@ impl Processor {
             let nft_ciety = Self::gcdm_decode_nft_ciety(nft_nth, &gcdm_raw, &mut b);
 
             let nft_ciety_f64 = nft_ciety;
-            total_ciety = total_ciety + nft_ciety_f64;
+            total_ciety.checked_add(nft_ciety_f64).ok_or(SolmateStakeError::OverflowOnF64);
         }
         return total_ciety;
     }
